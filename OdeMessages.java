@@ -54,12 +54,12 @@ public interface OdeMessages extends Messages {
   @Description("Text on \"Delete Project\" button")
   String deleteProjectButton();
 
-  @DefaultMessage("Publish to Gallery")
-  @Description("Text on \"Publish to Gallery\" button")
+  @DefaultMessage("Publish Project")
+  @Description("Text on \"Publish Project\" button")
   String publishToGalleryButton();
 
-  @DefaultMessage("Update Gallery App")
-  @Description("Text on \"Update Gallery App\" button")
+  @DefaultMessage("Update Project")
+  @Description("Text on \"Update Project\" button")
   String updateGalleryAppButton();
 
   @DefaultMessage("Show Warnings")
@@ -70,7 +70,7 @@ public interface OdeMessages extends Messages {
   @Description("Text on Toggle Warning Button")
   String hideWarnings();
 
-  @DefaultMessage("Upload File ...")
+  @DefaultMessage("Upload Files")
   @Description("Text on \"Add...\" button")
   String addButton();
 
@@ -98,7 +98,7 @@ public interface OdeMessages extends Messages {
   @Description("Label of the button for save as")
   String saveAsButton();
 
-  @DefaultMessage("Checkpoint ...")
+  @DefaultMessage("Backup")
   @Description("Label of the button for checkpoint")
   String checkpointButton();
 
@@ -106,11 +106,11 @@ public interface OdeMessages extends Messages {
   @Description("Label for the Toggle Tutorial Button")
   String toggleTutorialButton();
 
-  @DefaultMessage("Add Screen ...")
+  @DefaultMessage("New Screen")
   @Description("Label of the button for adding a new screen")
   String addFormButton();
 
-  @DefaultMessage("Remove Screen")
+  @DefaultMessage("Delete Screen")
   @Description("Label of the button for removing a screen")
   String removeFormButton();
 
@@ -124,31 +124,31 @@ public interface OdeMessages extends Messages {
   @Description("Confirmation query for removing a screen")
   String reallyDeleteForm(String formName);
 
-  @DefaultMessage("Open the Blocks Editor")
+  @DefaultMessage("Open Editor")
   @Description("Label of the button for opening the blocks editor")
   String openBlocksEditorButton();
 
-  @DefaultMessage("Screens ...")
+  @DefaultMessage("Screens")
   @Description("Label of the button for switching screens")
   String screensButton();
 
-  @DefaultMessage("Blocks")
+  @DefaultMessage("Code")
   @Description("Label of the button for switching to the blocks editor")
   String switchToBlocksEditorButton();
 
-  @DefaultMessage("Designer")
+  @DefaultMessage("Interface")
   @Description("Label of the button for switching to the form editor")
   String switchToFormEditorButton();
 
-  @DefaultMessage("Packaging ...")
+  @DefaultMessage("Building")
   @Description("Label of the button leading to build related cascade items, when building")
   String isBuildingButton();
 
-  @DefaultMessage("Opening the Blocks Editor... (click to cancel)")
+  @DefaultMessage("Opening the Editor... (click to cancel)")
   @Description("Label of the button for canceling the blocks editor launch")
   String cancelBlocksEditorButton();
 
-  @DefaultMessage("Blocks Editor is open")
+  @DefaultMessage("Code Editor is open")
   @Description("Label of the button for opening the blocks editor when the it is already open")
   String blocksEditorIsOpenButton();
 
@@ -331,11 +331,11 @@ public interface OdeMessages extends Messages {
   @Description("Label of the Text of showing resolved reports of reportlist")
   String moderationShowResolvedReports();
 
-  @DefaultMessage("An Email from App Inventor Gallery")
+  @DefaultMessage("An Email from Hybro Apps Store")
   @Description("Title of the email when moderator sends out an email")
   String moderationSendEmailTitle();
 
-  @DefaultMessage("App Inventor Gallery: App Activated")
+  @DefaultMessage("Hybro Apps Store: App Activated")
   @Description("Title of the email when app was activated")
   String moderationAppReactivatedTitle();
 
@@ -343,7 +343,7 @@ public interface OdeMessages extends Messages {
   @Description("Body of the email when app was activated")
   String moderationAppReactivateBody(String title);
 
-  @DefaultMessage("App Inventor Gallery: App Deactivated")
+  @DefaultMessage("Hybro Apps Store: App Deactivated")
   @Description("Title of the email when app was deactivated")
   String moderationAppDeactivatedTitle();
 
@@ -360,19 +360,19 @@ public interface OdeMessages extends Messages {
 
   // Used in Ode.java
 
-  @DefaultMessage("MIT App Inventor")
-  @Description("Title for App Inventor")
+  @DefaultMessage("HydrIDE")
+  @Description("Title for HydrIDE")
   String titleYoungAndroid();
 
-  @DefaultMessage("An internal error has occurred. Report a bug?")
+  @DefaultMessage("Error Occurred! Report?")
   @Description("Confirmation for reporting a bug after an internal error")
   String internalErrorReportBug();
 
-  @DefaultMessage("An internal error has occurred.")
+  @DefaultMessage("An error occurred.")
   @Description("Alert after an internal error")
   String internalError();
 
-  @DefaultMessage("An internal error has occurred. Go look in the Debugging view.")
+  @DefaultMessage("An error occurred. Go look in the Debugging view.")
   @Description("Alert after an internal error")
   String internalErrorSeeDebuggingView();
 
@@ -414,11 +414,11 @@ public interface OdeMessages extends Messages {
   @Description("Message that is shown to indicate that a deleting RPC is going on")
   String deletingRpcMessage();
 
-  @DefaultMessage("Packaging ...")
+  @DefaultMessage("Building ...")
   @Description("Message shown during a building RPC (for Young Android, called 'packaging')")
   String packagingRpcMessage();
 
-  @DefaultMessage("Downloading to phone ...")
+  @DefaultMessage("Downloading to device ...")
   @Description("Message shown while downloading application to the phone (during compilation)")
   String downloadingRpcMessage();
 
@@ -443,19 +443,19 @@ public interface OdeMessages extends Messages {
   // Used in TopPanel.java
 
   //Project
-  @DefaultMessage("Projects")
+  @DefaultMessage("Project")
   @Description("Name of Projects tab")
   String projectsTabName();
 
-  @DefaultMessage("My projects")
+  @DefaultMessage("My Project")
   @Description("Name of My projects menuitem")
   String projectMenuItem();
 
-  @DefaultMessage("Start new project")
+  @DefaultMessage("Create New Project")
   @Description("Label of the menu item for creating a new project")
   String newProjectMenuItem();
 
-  @DefaultMessage("Import project (.aia) from my computer ...")
+  @DefaultMessage("Import project")
   @Description("Name of Import Project menuitem")
   String importProjectMenuItem();
 
@@ -471,19 +471,19 @@ public interface OdeMessages extends Messages {
   @Description("Name of Save as ... menuitem")
   String saveAsMenuItem();
 
-  @DefaultMessage("Checkpoint")
+  @DefaultMessage("Backup")
   @Description("Name of Checkpoint menuitem")
   String checkpointMenuItem();
 
-  @DefaultMessage("Import project (.aia) from a repository ...")
+  @DefaultMessage("Create New Project from Template")
   @Description("Name of Import Template menuitem")
   String importTemplateButton();
 
-  @DefaultMessage("Export selected project (.aia) to my computer")
+  @DefaultMessage("Export Selected/Opened Project")
   @Description("Name of Export Project menuitem")
   String exportProjectMenuItem();
 
-  @DefaultMessage("Export all projects")
+  @DefaultMessage("Export all project as ZIP")
   @Description("Name of Export all Project menuitem")
   String exportAllProjectsMenuItem();
 
@@ -504,55 +504,55 @@ public interface OdeMessages extends Messages {
   @Description("Name of Components tab")
   String componentsTabName();
 
-  @DefaultMessage("My components")
+  @DefaultMessage("My Components")
   @Description("Name of My components menuitem")
   String myComponentsMenuItem();
 
-  @DefaultMessage("Start new component")
+  @DefaultMessage("Start New Component")
   @Description("Name of Start new component menuitem")
   String startNewComponentMenuItem();
 
-  @DefaultMessage("Import component to project ...")
+  @DefaultMessage("Import Component to Project")
   @Description("Name of Import component menuitem")
   String importComponentMenuItem();
 
-  @DefaultMessage("Import extension")
+  @DefaultMessage("Import Extension")
   @Description("String shown in the palette to import an extension")
   String importExtensionMenuItem();
 
-  @DefaultMessage("Build component")
+  @DefaultMessage("Build Component")
   @Description("Name of Build component menuitem")
   String buildComponentMenuItem();
 
-  @DefaultMessage("Upload component (.aix) from my computer ...")
+  @DefaultMessage("Upload Component (.aix)")
   @Description("Name of Upload component menuitem")
   String uploadComponentMenuItem();
 
-  @DefaultMessage("Upload Component...")
+  @DefaultMessage("Upload Component")
   @Description("Caption for component upload wizard.")
   String componentUploadWizardCaption();
 
-  @DefaultMessage("Import an extension into project")
+  @DefaultMessage("Import Extension")
   @Description("Caption for component import wizard.")
   String componentImportWizardCaption();
 
-  @DefaultMessage("Rename extension")
+  @DefaultMessage("Rename Extension")
   @Description("Caption for component rename wizard.")
   String componentRenameWizardCaption();
 
-  @DefaultMessage("Extension name")
+  @DefaultMessage("Extension Name")
   @Description("Caption for component Name Label in rename wizard.")
   String componentNameLabel();
 
-  @DefaultMessage("Import Extension Failed!")
+  @DefaultMessage("Import Extension Failed")
   @Description("Error message reported when the component import failed")
   String componentImportError();
 
-  @DefaultMessage("Extension Import failed due to unknown URL")
+  @DefaultMessage("Extension Import Failed due to unknown URL")
   @Description("Error message reported when the component import failed due to unknown url")
   String componentImportUnknownURLError();
 
-  @DefaultMessage("Extension Upgraded : ")
+  @DefaultMessage("Extension Updated : ")
   @Description("Alert message reported when the component import upgraded an already imported extension")
   String componentUpgradedAlert();
 
@@ -569,7 +569,7 @@ public interface OdeMessages extends Messages {
   @Description("Error message shown when a project references an unknown component.")
   String noComponentFound(String componentName, String projectName);
 
-  @DefaultMessage("Please enter a url")
+  @DefaultMessage("Please Enter a URL")
   @Description("Error message reported when no url is entered.")
   String noUrlError();
 
@@ -581,15 +581,15 @@ public interface OdeMessages extends Messages {
   @Description("Header for version column of component table")
   String componentVersionHeader();
 
-  @DefaultMessage("Are you really sure you want to delete the component(s): {0}?")
+  @DefaultMessage("Are you sure to delete the component(s): {0}?")
   @Description("Confirmation message for deleting component(s)")
   String confirmDeleteComponents(String componentNames);
 
-  @DefaultMessage("From my computer")
+  @DefaultMessage("From my device")
   @Description("")
   String componentImportFromComputer();
 
-  @DefaultMessage("URL")
+  @DefaultMessage("Link")
   @Description("For importing from a URL")
   String componentImportFromURL();
 
@@ -601,20 +601,20 @@ public interface OdeMessages extends Messages {
   @Description("Error message when the component descriptors for an extension are not parsable.")
   String extensionDescriptorCorrupt(String extensionName, String projectName);
 
-  @DefaultMessage("The project \"{0}\" contains an invalid extension. App Inventor will attempt to continue.")
+  @DefaultMessage("The project \"{0}\" contains an invalid extension. HydrIDE will attempt to continue.")
   @Description("Error message when an extension descriptor pathname does not have the correct structure.")
   String invalidExtensionInProject(String projectName);
 
   //Connect
-  @DefaultMessage("Connect")
+  @DefaultMessage("Tool")
   @Description("Label of the button leading to Connect related cascade items")
   String connectTabName();
 
-  @DefaultMessage("AI Companion")
+  @DefaultMessage("HydrIDE Mobile")
   @Description("Message providing details about starting the wireless connection.")
   String AICompanionMenuItem();
 
-  @DefaultMessage("Emulator")
+  @DefaultMessage("HydrIDE Emulator")
   @Description("Message providing details about starting the emulator connection.")
   String emulatorMenuItem();
 
@@ -634,7 +634,7 @@ public interface OdeMessages extends Messages {
   @Description("Label of the link for private user profile")
   String privateProfileLink();
 
-  @DefaultMessage("My Projects")
+  @DefaultMessage("My Project")
   @Description("Name of My Projects tab")
   String tabNameProjects();
 
@@ -651,23 +651,23 @@ public interface OdeMessages extends Messages {
   String hardResetConnectionsMenuItem();
 
   //Build
-  @DefaultMessage("Build")
+  @DefaultMessage("Export")
   @Description("Label of the button leading to build related cascade items")
   String buildTabName();
 
-  @DefaultMessage("App ( provide QR code for .apk )")
+  @DefaultMessage("Export for Android")
   @Description("Label of item for building a project and show barcode")
   String showBarcodeMenuItem();
 
-  @DefaultMessage("App for Google Play ( provide QR code for .apk )")
+  @DefaultMessage("Export for Hybro OS (Coming Soon)")
   @Description("Label of item for building a project and show barcode")
   String showBarcodeMenuItem2();
 
-  @DefaultMessage("App ( save .apk to my computer )")
+  @DefaultMessage("Export for APK")
   @Description("Label of item for building a project and downloading")
   String downloadToComputerMenuItem();
 
-  @DefaultMessage("App for Google Play ( save .apk to my computer )")
+  @DefaultMessage("Export for iOS (Coming Soon)")
   @Description("Label of item for building a project and downloading")
   String downloadToComputerMenuItem2();
 
@@ -676,7 +676,7 @@ public interface OdeMessages extends Messages {
   String generateYailMenuItem();
 
   //Help
-  @DefaultMessage("Help")
+  @DefaultMessage("More")
   @Description("Label for the Help menu")
   String helpTabName();
 
@@ -684,23 +684,23 @@ public interface OdeMessages extends Messages {
   @Description("Label of the link for About")
   String aboutMenuItem();
 
-  @DefaultMessage("Companion Information")
+  @DefaultMessage("HydrIDE Mobile Info")
   @Description("Information about the Companion")
   String companionInformation();
 
-  @DefaultMessage("Update the Companion")
+  @DefaultMessage("Update HydrIDE Mobile")
   @Description("Menu item to update the Companion to the latest version")
   String companionUpdate();
 
-  @DefaultMessage("You must have a project open to update the Companion")
+  @DefaultMessage("You must have a project opened to update HydrIDE Mobile")
   @Description("")
   String companionUpdateMustHaveProject();
 
-  @DefaultMessage("Show Splash Screen")
+  @DefaultMessage("Show Welcome Dialog")
   @Description("Redisplay the Splash Screen")
   String showSplashMenuItem();
 
-  @DefaultMessage("Library")
+  @DefaultMessage("Docs")
   @Description("Name of Library link")
   String libraryMenuItem();
 
@@ -708,11 +708,11 @@ public interface OdeMessages extends Messages {
   @Description("Name of Getting Started link")
   String getStartedMenuItem();
 
-  @DefaultMessage("Extensions")
+  @DefaultMessage("Extension Store")
   @Description("Extensions link")
   String extensionsMenuItem();
 
-  @DefaultMessage("Tutorials")
+  @DefaultMessage("Tutorial")
   @Description("Name of Tutorials link")
   String tutorialsMenuItem();
 
@@ -720,7 +720,7 @@ public interface OdeMessages extends Messages {
   @Description("Name of Troubleshooting link")
   String troubleshootingMenuItem();
 
-  @DefaultMessage("Forums")
+  @DefaultMessage("Community")
   @Description("Name of Forums link")
   String forumsMenuItem();
 
@@ -729,43 +729,43 @@ public interface OdeMessages extends Messages {
   String feedbackMenuItem();
 
   //Admin
-  @DefaultMessage("Admin")
+  @DefaultMessage("Developers")
   @Description("Label of the button leading to admin functionality")
   String adminTabName();
 
-  @DefaultMessage("Download User Source")
+  @DefaultMessage("Get User Project")
   @Description("Label of the button for admins to download a user's project source")
   String downloadUserSourceMenuItem();
 
-  @DefaultMessage("Switch To Debug Panel")
+  @DefaultMessage("Debug Panel")
   @Description("Label of the button for admins to switch to the debug panel without an explicit error")
   String switchToDebugMenuItem();
 
   //Tabs
-  @DefaultMessage("My Projects")
+  @DefaultMessage("Home")
   @Description("Name of My Projects tab")
   String myProjectsTabName();
 
-  @DefaultMessage("Guide")
+  @DefaultMessage("Docs")
   @Description("Name of Guide link")
   String guideTabName();
 
-  @DefaultMessage("Report an Issue")
+  @DefaultMessage("Report")
   @Description("Link for Report an Issue form")
   String feedbackTabName();
 
-  @DefaultMessage("Gallery")
+  @DefaultMessage("Store")
   @Description("Link for Gallery")
   String galleryTabName();
 
   //User email dropdown
-  @DefaultMessage("Sign out")
+  @DefaultMessage("Log Out")
   @Description("Label of the link for signing out")
   String signOutLink();
 
   //
 
-  @DefaultMessage("Design")
+  @DefaultMessage("Interface")
   @Description("Name of Design tab")
   String tabNameDesign();
 
@@ -777,7 +777,7 @@ public interface OdeMessages extends Messages {
   @Description("Message shown when there is no current file editor to switch to")
   String chooseProject();
 
-  @DefaultMessage("Emails")
+  @DefaultMessage("Email")
   @Description("Title for user's email inbox")
   String emailInboxTitle();
 
@@ -791,43 +791,43 @@ public interface OdeMessages extends Messages {
 
   // Used in boxes/AssetListBox.java
 
-  @DefaultMessage("Media")
+  @DefaultMessage("Assets")
   @Description("Caption for asset list box.")
   String assetListBoxCaption();
 
   // Used in boxes/MessagesOutputBox.java
 
-  @DefaultMessage("Messages")
+  @DefaultMessage("Logs")
   @Description("Caption for message output box.")
   String messagesOutputBoxCaption();
 
   // Used in boxes/MotdBox.java
 
-  @DefaultMessage("Welcome to App Inventor!")
+  @DefaultMessage("Welcome to HydrIDE!")
   @Description("Initial caption for MOTD box.")
   String motdBoxCaption();
 
   // Used in boxes/OdeLogBox.java
 
-  @DefaultMessage("Developer Messages")
+  @DefaultMessage("Developer Logs")
   @Description("Caption for ODE log box.")
   String odeLogBoxCaption();
 
   // Used in boxes/PaletteBox.java
 
-  @DefaultMessage("Palette")
+  @DefaultMessage("Add Items")
   @Description("Caption for palette box.")
   String paletteBoxCaption();
 
   // Used in boxes/ProjectListBox.java
 
-  @DefaultMessage("My Projects")
+  @DefaultMessage("Projects")
   @Description("Caption for project list box.")
   String projectListBoxCaption();
 
   // Used in boxes/ProjectListBox.java
 
-  @DefaultMessage("My Studios")
+  @DefaultMessage("Studios")
   @Description("Caption for studio list box.")
   String studioListBoxCaption();
 
@@ -863,7 +863,7 @@ public interface OdeMessages extends Messages {
 
   // Used in boxes/PropertiesBox.java
 
-  @DefaultMessage("Properties")
+  @DefaultMessage("Component Setting")
   @Description("Caption for properties box.")
   String propertiesBoxCaption();
 
@@ -875,11 +875,11 @@ public interface OdeMessages extends Messages {
 
   // Used in boxes/BlockSelectorBox.java
 
-  @DefaultMessage("Blocks")
+  @DefaultMessage("Items")
   @Description("Caption for block selector box.")
   String blockSelectorBoxCaption();
 
-  @DefaultMessage("Built-in")
+  @DefaultMessage("Blocks")
   @Description("Label on built-in-blocks branch of block selector tree")
   String builtinBlocksLabel();
 
@@ -895,23 +895,23 @@ public interface OdeMessages extends Messages {
   @Description("Label on built-in-Text-blocks branch of block selector tree")
   String builtinTextLabel();
 
-  @DefaultMessage("Lists")
+  @DefaultMessage("List")
   @Description("Label on built-in-Lists-blocks branch of block selector tree")
   String builtinListsLabel();
 
-  @DefaultMessage("Colors")
+  @DefaultMessage("Color")
   @Description("Label on built-in-Colors-blocks branch of block selector tree")
   String builtinColorsLabel();
 
-  @DefaultMessage("Variables")
+  @DefaultMessage("Variable")
   @Description("Label on built-in-Variables-blocks branch of block selector tree")
   String builtinVariablesLabel();
 
-  @DefaultMessage("Procedures")
+  @DefaultMessage("Function")
   @Description("Label on built-in-Procedures-blocks branch of block selector tree")
   String builtinProceduresLabel();
 
-  @DefaultMessage("Any component")
+  @DefaultMessage("Any Component")
   @Description("Label on any-component branch of block selector tree")
   String anyComponentLabel();
 
@@ -921,67 +921,67 @@ public interface OdeMessages extends Messages {
 
   // Used in boxes/ViewerBox.java
 
-  @DefaultMessage("Viewer")
+  @DefaultMessage("Interface/Editor")
   @Description("Caption for a viewer box.")
   String viewerBoxCaption();
 
   // Used in SaveAllEditorsCommand.java
 
-  @DefaultMessage("Saved project at {0}")
+  @DefaultMessage("Project Saved")
   @Description("Message reported when project was saved successfully.")
   String savedProject(String saveTime);
 
   // Used in editor/EditorManager.java
 
-  @DefaultMessage("Server error: could not save one or more files. Please try again later!")
+  @DefaultMessage("Server error: could not save files. Please try again later!")
   @Description("Error message reported when one or more file couldn't be saved to the server.")
   String saveErrorMultipleFiles();
 
-  @DefaultMessage("Error generating Yail for screen {0}: {1}. Please fix and try packaging again.")
+  @DefaultMessage("Error (Generating Yail) for screen {0}: {1}. Please fix and try packaging again.")
   @Description("Error message reported when yail generation fails for a screen")
   String yailGenerationError(String formName, String description);
 
   // Used in editor/simple/SimpleNonVisibleComponentsPanel.java
 
-  @DefaultMessage("Non-visible components")
+  @DefaultMessage("Non-visible Items")
   @Description("Header for the non-visible components in the designer.")
   String nonVisibleComponentsHeader();
 
   // Used in editor/simple/SimpleVisibleComponentsPanel.java
 
-  @DefaultMessage("Display hidden components in Viewer")
+  @DefaultMessage("Display hidden items")
   @Description("Checkbox controlling whether to display invisible components in the designer.")
   String showHiddenComponentsCheckbox();
 
-  @DefaultMessage("Check to see Preview on Tablet size.")
+  @DefaultMessage("Tablet Size Preview")
   @Description("Checkbox (check) controlling whether to display a preview on Tablet size.")
   String previewTabletSize();
 
-  @DefaultMessage("Un-check to see Preview on Phone size.")
+  @DefaultMessage("Phone Size Preview")
   @Description("Checkbox (un-check) controlling whether to display a preview on Phone size.")
   String previewPhoneSize();
 
   // Used in editor/simple/components/MockComponent.java
 
-  @DefaultMessage("Rename Component")
+  @DefaultMessage("Rename Item")
   @Description("Title for the rename component dialog")
   String renameTitle();
 
-  @DefaultMessage("Component names can contain only letters, numbers, and underscores and " +
-      "must start with a letter")
+  @DefaultMessage("Please use only letters, numbers, underscores and " +
+      "start with a letter")
   @Description("Error message when component name contains non-alphanumeric characters besides _ " +
       "or does not start with a letter")
   String malformedComponentNameError();
 
-  @DefaultMessage("Duplicate component name!")
+  @DefaultMessage("Please use a unique item name!")
   @Description("Error shown when a new component name would be the same as an existing one")
   String duplicateComponentNameError();
 
-  @DefaultMessage("Component instance names cannot be the same as a component type")
+  @DefaultMessage("names cannot be the same as a component type")
   @Description("Error shown when a new component name would be the same as a component type name")
   String sameAsComponentTypeNameError();
 
-  @DefaultMessage("Component names cannot be the same as that of a component instance")
+  @DefaultMessage("names cannot be the same as that of a component instance")
   @Description("Error shown when a new component type would be the same as a component instance name")
   String sameAsComponentInstanceNameError();
 
@@ -995,13 +995,13 @@ public interface OdeMessages extends Messages {
   @Description("Error shown when a new name is a reserved name in Yail or Java code")
   String reservedNameError();
 
-  @DefaultMessage("Deleting this component will delete all blocks associated with it in the " +
-      "Blocks Editor. Are you sure you want to delete?")
+  @DefaultMessage("Deleting this item will delete all blocks/codes related to it." +
+      "Are you sure to delete it?")
   @Description("Confirmation query for deleting a component")
   String reallyDeleteComponent();
 
-  @DefaultMessage("Removing this component will delete all components and blocks associated with them in the " +
-          "Project. Are you sure you want to delete?")
+  @DefaultMessage("Removing this item will delete all components, blocks and codes related to it." +
+          "Are you sure to delete it?")
   @Description("Confirmation query for removing a component")
   String reallyRemoveComponent();
 
@@ -1039,7 +1039,7 @@ public interface OdeMessages extends Messages {
 
   // Used in editor/simple/palette/ComponentHelpWidget.java
 
-  @DefaultMessage("Extension Version:")
+  @DefaultMessage("Version:")
   @Description("Header for extension version information")
   String externalComponentVersion();
 
@@ -1047,7 +1047,7 @@ public interface OdeMessages extends Messages {
   @Description("Header to indicate the date an extension was compiled")
   String dateBuilt();
 
-  @DefaultMessage("More information")
+  @DefaultMessage("More info")
   @Description("Label of the link to a component's reference docs")
   String moreInformation();
 
@@ -1067,12 +1067,12 @@ public interface OdeMessages extends Messages {
 
   // Used in editor/youngandroid/BlocklyPanel.java
 
-  @DefaultMessage("The blocks area did not load properly. Changes to the blocks for screen {0} will not be saved.")
+  @DefaultMessage("The blocks/codes could not load properly. Changes to screen {0} will not be saved.")
   @Description("Message indicating that blocks changes were not saved")
   String blocksNotSaved(String formName);
 
-  @DefaultMessage("The blocks for screen {0} did not load properly. "
-      + "You will not be able to edit using the blocks editor until the problem is corrected.")
+  @DefaultMessage("The blocks/codes for screen {0} could not load properly. "
+      + "You will not be able to edit until the problem is corrected.")
   @Description("Message when blocks fail to load properly")
   String blocksLoadFailure(String formName);
 
@@ -1192,7 +1192,7 @@ public interface OdeMessages extends Messages {
   @Description("Text for color choice 'Blue'")
   String blueColor();
 
-  @DefaultMessage("Cyan")
+  @DefaultMessage("Light Blue")
   @Description("Text for color choice 'Cyan'")
   String cyanColor();
 
@@ -1216,7 +1216,7 @@ public interface OdeMessages extends Messages {
   @Description("Text for color choice 'Light Gray'")
   String lightGrayColor();
 
-  @DefaultMessage("Magenta")
+  @DefaultMessage("Purple")
   @Description("Text for color choice 'Magenta'")
   String magentaColor();
 
@@ -1260,27 +1260,27 @@ public interface OdeMessages extends Messages {
 
   // Used in editor/youngandroid/properties/YoungAndroidLengthPropertyEditor.java
 
-  @DefaultMessage("Automatic")
+  @DefaultMessage("Auto")
   @Description("Caption and summary for Automatic choice")
   String automaticCaption();
 
-  @DefaultMessage("Fill parent")
+  @DefaultMessage("Fill Parent")
   @Description("Caption and summary for Fill Parent choice")
   String fillParentCaption();
 
-  @DefaultMessage("percent")
+  @DefaultMessage("Percent")
   @Description("Caption for percent label")
   String percentCaption();
 
-  @DefaultMessage("pixels")
+  @DefaultMessage("Pixels")
   @Description("Caption for pixels label")
   String pixelsCaption();
 
-  @DefaultMessage("{0} pixels")
+  @DefaultMessage("{0} px")
   @Description("Summary for custom length in pixels")
   String pixelsSummary(String pixels);
 
-  @DefaultMessage("{0} percent")
+  @DefaultMessage("{0} %")
   @Description("Summary for length in percent")
   String percentSummary(String percent);
 
@@ -1374,7 +1374,7 @@ public interface OdeMessages extends Messages {
   @Description("Label in front of name in new screen dialog.")
   String formNameLabel();
 
-  @DefaultMessage("WARNING: The number of screens in this app might exceed the limits of App Inventor. " +
+  @DefaultMessage("WARNING: The number of screens in this app might exceed the limits of HydrIDE. " +
                   "Click <a target=\"_blank\" href=\"/reference/other/manyscreens.html\">here</a> for advice about " +
                   "creating apps with many screens. " +
                   "<p>Do you really want to add another screen?</p>")
@@ -1415,9 +1415,9 @@ public interface OdeMessages extends Messages {
       "a build request.")
   String buildServerBusyError();
 
-  @DefaultMessage("The build server is not compatible with this version of App Inventor.")
+  @DefaultMessage("The build server is not compatible.")
   @Description("Error message reported when the build server is running a different version of " +
-      "the App Inventor code.")
+      "the HydrIDE code.")
   String buildServerDifferentVersion();
 
   @DefaultMessage("Unable to generate code for {0}.")
@@ -1426,17 +1426,17 @@ public interface OdeMessages extends Messages {
 
   // Used in explorer/commands/CommandRegistory.java
 
-  @DefaultMessage("Delete...")
+  @DefaultMessage("Delete")
   @Description("Label for the context menu command that deletes a file")
   String deleteFileCommand();
 
-  @DefaultMessage("Download to my computer")
+  @DefaultMessage("Download to device")
   @Description("Label for the context menu command that downloads a file")
   String downloadFileCommand();
 
   // Used in explorer/commands/CopyYoungAndroidProjectCommand.java
 
-  @DefaultMessage("Checkpoint - {0}")
+  @DefaultMessage("Backup - {0}")
   @Description("Title of checkpoint dialog.")
   String checkpointTitle(String projectName);
 
@@ -1444,19 +1444,19 @@ public interface OdeMessages extends Messages {
   @Description("Title of save as dialog.")
   String saveAsTitle(String projectName);
 
-  @DefaultMessage("{0}_checkpoint{1}")
+  @DefaultMessage("{0}_backup{1}")
   @Description("Default project name in checkoint dialog")
   String defaultCheckpointProjectName(String projectName, String suffix);
 
-  @DefaultMessage("Previous checkpoints:")
+  @DefaultMessage("Previous backups:")
   @Description("Label for previous checkpoints table in checkpoint dialog.")
   String previousCheckpointsLabel();
 
   @DefaultMessage("{0}_copy")
-  @Description("Defaulf project name in save as dialog")
+  @Description("Default project name in save as dialog")
   String defaultSaveAsProjectName(String projectName);
 
-  @DefaultMessage("Checkpoint name:")
+  @DefaultMessage("Backup name:")
   @Description("Label in front of new name in checkpoint dialog.")
   String checkpointNameLabel();
 
@@ -1467,7 +1467,7 @@ public interface OdeMessages extends Messages {
   // Used in explorer/commands/DeleteFileCommand.java
 
   @DefaultMessage("Do you really want to delete this file?  It will be removed from " +
-      "the App Inventor server.  Also, parts of your application may still refer to the deleted " +
+      "HydrIDE.  Also, parts of your application may still refer to the deleted " +
       "file, and you will need to change these.")
   @Description("Confirmation message that will be shown before deleting a file")
   String reallyDeleteFile();
@@ -1478,19 +1478,18 @@ public interface OdeMessages extends Messages {
 
   // Used in explorer/commands/EnsurePhoneConnectedCommand.java
 
-  @DefaultMessage("The phone is not connected.")
+  @DefaultMessage("The device is not connected.")
   @Description("Error message displayed when the user wants to download a project to the phone, " +
       "but the phone is not connected.")
   String phoneNotConnected();
 
   // Used in explorer/commands/ShowBarcodeCommand.java
 
-  @DefaultMessage("Barcode link for {0}")
+  @DefaultMessage("App for {0}")
   @Description("Title of barcode dialog.")
   String barcodeTitle(String projectName);
 
-  @DefaultMessage("Note: this barcode is only valid for 2 hours. See {0} the FAQ {1} for info " +
-      "on how to share your app with others.")
+  @DefaultMessage("Note: this QR Code / Link is only valid for 2 hours.")
   @Description("Warning in barcode dialog.")
   String barcodeWarning(String aTagStart, String aTagEnd);
 
@@ -1518,15 +1517,15 @@ public interface OdeMessages extends Messages {
   @Description("Label of the button leading to more cascade items")
   String moreActionsButton();
 
-  @DefaultMessage("Download User Source")
+  @DefaultMessage("Get User Project")
   @Description("Title of the dialog box for downloading a user's project source")
   String downloadUserSourceDialogTitle();
 
-  @DefaultMessage("User id or email (case-sensitive):")
+  @DefaultMessage("Account ID or Email (case-sensitive):")
   @Description("Label for the user id input text box")
   String userIdLabel();
 
-  @DefaultMessage("Project id or name:")
+  @DefaultMessage("Project ID :")
   @Description("Label for the project id input text box")
   String projectIdLabel();
 
@@ -1542,20 +1541,20 @@ public interface OdeMessages extends Messages {
   @Description("Error message displayed when no project is selected")
   String noProjectSelectedForDelete();
 
-  @DefaultMessage("Are you really sure you want to delete this project: {0}")
+  @DefaultMessage("Are you sure to delete this project: {0}")
   @Description("Confirmation message for selecting a single project and clicking delete")
   String confirmDeleteSingleProject(String projectName);
 
-  @DefaultMessage("Are you really sure you want to delete this project: {0}?"+
+  @DefaultMessage("Are you sure to delete this project: {0}?"+
       " Note that the published copy of this project will be removed from the gallery as well.")
   @Description("Confirmation message for selecting a single project and clicking delete when gallery is on")
   String confirmDeleteSinglePublishedProject(String projectName);
 
-  @DefaultMessage("Are you really sure you want to delete these projects: {0}?")
+  @DefaultMessage("Are you sure to delete these projects: {0}?")
   @Description("Confirmation message for selecting multiple projects and clicking delete")
   String confirmDeleteManyProjects(String projectNames);
 
-  @DefaultMessage("Are you really sure you want to delete these projects: {0}?"+
+  @DefaultMessage("Are you sure to delete these projects: {0}?"+
       " Note that if any of the projects have been published, the published version in"+
       " the gallery will be removed as well.")
   @Description("Confirmation message for selecting multiple projects and clicking delete when gallery is on")
@@ -1586,7 +1585,7 @@ public interface OdeMessages extends Messages {
   String uploadKeystoreError();
 
   @DefaultMessage("Do you want to overwrite your keystore file?\n\n" +
-      "If you agree, your old keystore file will be completely removed from the App Inventor " +
+      "If you agree, your old keystore file will be completely removed from HydrIDE " +
       "server.\n\n" +
       "If you have published applications to the Google Play Store using the keystore you are " +
       "about to overwrite, you will lose the ability to update your applications.\n\n" +
@@ -1604,7 +1603,7 @@ public interface OdeMessages extends Messages {
   String deleteKeystoreError();
 
   @DefaultMessage("Do you really want to delete your keystore file?\n\n" +
-      "If you agree, your old keystore file will be completely removed from the App Inventor " +
+      "If you agree, your old keystore file will be completely removed from the HydrIDE " +
       "server. A new, but different, keystore file will be created automatically the next time " +
       "you package a project for the phone.\n\n" +
       "If you have published applications to the Google Play Store using the keystore you are " +
@@ -1710,7 +1709,7 @@ public interface OdeMessages extends Messages {
   @Description("Error message when filenames are 0 or 101+ characters long")
   String filenameBadSize();
 
-  @DefaultMessage("Uploading {0} to the App Inventor server")
+  @DefaultMessage("Uploading {0} to HydrIDE")
   @Description("Message displayed when an asset is uploaded.")
   String fileUploadingMessage(String filename);
 
@@ -1734,8 +1733,7 @@ public interface OdeMessages extends Messages {
   @Description("Error message when user tries to upload aia file as media asset")
   String aiaMediaAssetTitle();
 
-  @DefaultMessage("To use this file, click Projects > Import project (.aia) from" +
-    " my computer ...")
+  @DefaultMessage("To use this file, click Projects > Import project")
   @Description("Error message when user tries to upload aia file as media asset")
   String aiaMediaAsset();
 
@@ -1753,7 +1751,7 @@ public interface OdeMessages extends Messages {
 
   // Used in wizards/KeystoreUploadWizard.java
 
-  @DefaultMessage("Upload Keystore...")
+  @DefaultMessage("Upload Keystore")
   @Description("Caption for keystore upload wizard.")
   String keystoreUploadWizardCaption();
 
@@ -1773,11 +1771,11 @@ public interface OdeMessages extends Messages {
 
   // Used in wizards/TemplateUploadWizard.java
 
-  @DefaultMessage("Create a Project from a Template")
+  @DefaultMessage("Create New Project from Template")
   @Description("Caption for template upload wizard.")
   String templateUploadWizardCaption();
 
-  @DefaultMessage("Add a New Template Library Url")
+  @DefaultMessage("Add a Template Library")
   @Description("Caption for template dialog menu item.")
   String templateUploadNewUrlCaption();
 
@@ -1790,7 +1788,7 @@ public interface OdeMessages extends Messages {
   String newUrlLabel();
   // Used in wizards/ProjectUploadWizard.java
 
-  @DefaultMessage("Import Project...")
+  @DefaultMessage("Import Project")
   @Description("Caption for project upload wizard.")
   String projectUploadWizardCaption();
 
@@ -1844,7 +1842,7 @@ public interface OdeMessages extends Messages {
   @Description("Text for gallery page remove button")
   String galleryRemoveText();
 
-  @DefaultMessage("Are you really sure you want to remove this app from gallery?")
+  @DefaultMessage("Are you sure to remove this app from gallery?")
   @Description("Text for remove confirm alert")
   String galleryRemoveConfirmText();
 
@@ -1951,7 +1949,7 @@ public interface OdeMessages extends Messages {
   @Description("Title prefix for the gallery page sidebar that shows list of remixed apps.")
   String galleryAppsRemixesSidebar();
 
-  @DefaultMessage("Please explain why you feel this app is disrespectful or inappropriate, or otherwise breaks the <a href=\"http://google.com\">App Inventor Gallery Community Guidelines.</a> " +
+  @DefaultMessage("Please explain why you feel this app is disrespectful or inappropriate, or otherwise breaks the <a href=\"http://google.com\">HydrIDE Gallery Community Guidelines.</a> " +
       "")
   @Description("Prompt for the gallery app report section.")
   String galleryReportPrompt();
@@ -2067,7 +2065,7 @@ public interface OdeMessages extends Messages {
   @Description("label of more info link")
   String labelMoreInfoLink();
 
-  @DefaultMessage("App Inventor will send you a notification "
+  @DefaultMessage("HydrIDE will send you a notification "
       + "when the apps you have posted are liked or downloaded. "
       + "Below, you can enable/disable this feature and you can "
       + "specify how often you want to be notified")
@@ -2133,13 +2131,13 @@ public interface OdeMessages extends Messages {
 
   // Used in wizards/youngandroid/NewYoungAndroidProjectWizard.java
 
-  @DefaultMessage("Create new App Inventor project")
+  @DefaultMessage("New Project")
   @Description("Caption for the wizard to create a new Young Android project")
   String newYoungAndroidProjectWizardCaption();
 
   // Used in wizards/youngandroid/RemixedYoungAndroidProjectWizard.java
 
-  @DefaultMessage("Name this App Inventor project")
+  @DefaultMessage("Project Name")
   @Description("Caption for the wizard to name the opening Young Android project")
   String remixedYoungAndroidProjectWizardCaption();
 
@@ -2173,7 +2171,7 @@ public interface OdeMessages extends Messages {
 
   // Used in youngandroid/YoungAndroidFormUpgrader.java
 
-  @DefaultMessage("This project was created with an older version of the App Inventor " +
+  @DefaultMessage("This project was created with an older version of the HydrIDE " +
       "system and was upgraded.\n{0}")
   @Description("Alert message displayed when a project is upgraded")
   String projectWasUpgraded(String details);
@@ -2182,12 +2180,12 @@ public interface OdeMessages extends Messages {
   @Description("Alert message displayed when upgrade fails")
   String unexpectedProblem(String details);
 
-  @DefaultMessage("This project was saved with a newer version of the App Inventor system. We " +
+  @DefaultMessage("This project was saved with a newer version of the HydrIDE system. We " +
       "will attempt to load the project, but there may be compatibility issues.")
   @Description("Alert message displayed when project is newer than system")
   String newerVersionProject();
 
-  @DefaultMessage("This project was saved with an early pre-release version of the App Inventor " +
+  @DefaultMessage("This project was saved with an early pre-release version of the HydrIDE " +
       "system. We will attempt to load the project, but there may be compatibility issues.")
   @Description("Alert message displayed when upgrading a project without version numbers")
   String veryOldProject();
@@ -2227,37 +2225,37 @@ public interface OdeMessages extends Messages {
   @Description("Text messages are always received, and a notification is shown if the App is in the background.")
   String textReceivingChoiceAlways();
 
-  @DefaultMessage("Starting asset transfer to companion...")
+  @DefaultMessage("Starting asset transfer to HydrIDE Mobile")
   @Description("Message to display at the start of an asset transfer before any assets are sent")
   String startingAssetTransfer();
 
-  @DefaultMessage("Downloading {0} from the App Inventor server...")
+  @DefaultMessage("Downloading {0} from HydrIDE...")
   @Description("Message to display when an asset is being downloaded from the server")
   String loadingAsset(String assetPath);
 
-  @DefaultMessage("Sending {0} to companion...")
+  @DefaultMessage("Sending {0} to HydrIDE Mobile...")
   @Description("Message to display when sending an asset to the companion")
   String sendingAssetToCompanion(String assetPath);
 
   // This error message is displayed as HTML
-  @DefaultMessage("App Inventor is unable to compile this project.  " +
-      "<br /> The compiler error output was <br /> {0}.")
+  @DefaultMessage("Unable to compile this project.  " +
+      "<br /> The error log was <br/> {0}.")
   @Description("Compilation error, with error message.")
   String unableToCompile(String errorMesssage);
 
-  @DefaultMessage("The APK file will be saved in the download folder.")
+  @DefaultMessage("The APK file will be downloaded.")
   @Description("")
   String apkSavedToComputer();
 
-  @DefaultMessage("The APK file will be installed in the phone.")
+  @DefaultMessage("The APK file will be installed")
   @Description("")
   String apkInstalledToPhone();
 
-  @DefaultMessage("Waiting for the barcode.")
+  @DefaultMessage("Waiting for App.")
   @Description("")
   String waitingForBarcode();
 
-  @DefaultMessage("Preparing application icon")
+  @DefaultMessage("Preparing your app icon")
   @Description("")
   String preparingApplicationIcon();
 
@@ -2265,23 +2263,23 @@ public interface OdeMessages extends Messages {
   @Description("")
   String determiningPermissions();
 
-  @DefaultMessage("Generating application information")
+  @DefaultMessage("Generating app info")
   @Description("")
   String generatingApplicationInformation();
 
-  @DefaultMessage("Compiling part 1")
+  @DefaultMessage("Preparing your stunning app")
   @Description("")
   String compilingPart1();
 
-  @DefaultMessage("Compiling part 2 (please wait)")
+  @DefaultMessage("Getting your awesome app ready")
   @Description("")
   String compilingPart2();
 
-  @DefaultMessage("Preparing final package")
+  @DefaultMessage("Loading Awesome")
   @Description("")
   String preparingFinalPackage();
 
-  @DefaultMessage("Building APK")
+  @DefaultMessage("Preparing Package")
   @Description("")
   String buildingApk();
 
@@ -2291,7 +2289,7 @@ public interface OdeMessages extends Messages {
 
   // This error message is displayed as HTML
 
-  @DefaultMessage("User Interface")
+  @DefaultMessage("Interface")
   @Description("")
   String userInterfaceComponentPallette();
 
@@ -2303,7 +2301,7 @@ public interface OdeMessages extends Messages {
   @Description("")
   String mediaComponentPallette();
 
-  @DefaultMessage("Drawing and Animation")
+  @DefaultMessage("Drawing & Animation")
   @Description("")
   String drawingAndAnimationComponentPallette();
 
@@ -2339,11 +2337,11 @@ public interface OdeMessages extends Messages {
   @Description("")
   String connectivityComponentPallette();
 
-  @DefaultMessage("LEGO\u00AE MINDSTORMS\u00AE")
+  @DefaultMessage("IoT & Robot")
   @Description("")
   String legoMindstormsComponentPallette();
 
-  @DefaultMessage("Extension")
+  @DefaultMessage("Extensions")
   @Description("")
   String extensionComponentPallette();
 
@@ -2351,7 +2349,7 @@ public interface OdeMessages extends Messages {
   @Description("")
   String externalComponentPalette();
 
-  @DefaultMessage("Experimental")
+  @DefaultMessage("Beta")
   @Description("")
   String experimentalComponentPallette();
 
@@ -2412,7 +2410,7 @@ public interface OdeMessages extends Messages {
   @Description("")
   String sliderComponentPallette();
 
-  @DefaultMessage("Spinner")
+  @DefaultMessage("DropDown")
   @Description("")
   String spinnerComponentPallette();
 
@@ -2424,7 +2422,7 @@ public interface OdeMessages extends Messages {
   @Description("")
   String timePickerComponentPallette();
 
-  @DefaultMessage("TinyDB")
+  @DefaultMessage("LocalDB")
   @Description("")
   String tinyDBComponentPallette();
 
@@ -2462,7 +2460,7 @@ public interface OdeMessages extends Messages {
   @Description("")
   String ballComponentPallette();
 
-  @DefaultMessage("ImageSprite")
+  @DefaultMessage("Sprite")
   @Description("")
   String imageSpriteComponentPallette();
 
@@ -2504,7 +2502,7 @@ public interface OdeMessages extends Messages {
   @Description("")
   String accelerometerSensorComponentPallette();
 
-  @DefaultMessage("BarcodeScanner")
+  @DefaultMessage("QRCodeScanner")
   @Description("")
   String barcodeScannerComponentPallette();
 
@@ -2529,23 +2527,23 @@ public interface OdeMessages extends Messages {
   String orientationSensorComponentPallette();
 
   // Screen Arrangement
-  @DefaultMessage("HorizontalArrangement")
+  @DefaultMessage("HorizontalLayout")
   @Description("")
   String horizontalArrangementComponentPallette();
 
-  @DefaultMessage("HorizontalScrollArrangement")
+  @DefaultMessage("HorizontalScrollLayout")
   @Description("")
   String horizontalScrollArrangementComponentPallette();
 
-  @DefaultMessage("TableArrangement")
+  @DefaultMessage("TableLayout")
   @Description("")
   String tableArrangementComponentPallette();
 
-  @DefaultMessage("VerticalArrangement")
+  @DefaultMessage("VerticalLayout")
   @Description("")
   String verticalArrangementComponentPallette();
 
-  @DefaultMessage("VerticalScrollArrangement")
+  @DefaultMessage("VerticalScrollLayout")
   @Description("")
   String verticalScrollArrangementComponentPallette();
 
@@ -2624,19 +2622,19 @@ public interface OdeMessages extends Messages {
   @Description("")
   String bluetoothServerComponentPallette();
 
-  @DefaultMessage("Notifier")
+  @DefaultMessage("Dialog")
   @Description("")
   String notifierComponentPallette();
 
-  @DefaultMessage("SpeechRecognizer")
+  @DefaultMessage("GoogleSpeechRecognizer")
   @Description("")
   String speechRecognizerComponentPallette();
 
-  @DefaultMessage("TextToSpeech")
+  @DefaultMessage("GoogleTextToSpeech")
   @Description("")
   String textToSpeechComponentPallette();
 
-  @DefaultMessage("TinyWebDB")
+  @DefaultMessage("HyWebDB")
   @Description("")
   String tinyWebDBComponentPallette();
 
@@ -2649,7 +2647,7 @@ public interface OdeMessages extends Messages {
   @Description("")
   String fileComponentPallette();
 
-  @DefaultMessage("FirebaseDB")
+  @DefaultMessage("GoogleFirebase")
   @Description("")
   String firebaseDBComponentPallette();
 
@@ -2678,19 +2676,19 @@ public interface OdeMessages extends Messages {
   String webViewerComponentPallette();
 
   // Component Properties
-  @DefaultMessage("AboutScreen")
+  @DefaultMessage("About Screen Content")
   @Description("")
   String AboutScreenProperties();
 
-  @DefaultMessage("ShowStatusBar")
+  @DefaultMessage("Show Status Bar")
   @Description("")
   String ShowStatusBarProperties();
 
-  @DefaultMessage("TitleVisible")
+  @DefaultMessage("Title Visible")
   @Description("")
   String TitleVisibleProperties();
 
-  @DefaultMessage("AboveRangeEventEnabled")
+  @DefaultMessage("AboveRangeEvent Enabled")
   @Description("")
   String AboveRangeEventEnabledProperties();
 
@@ -2698,55 +2696,55 @@ public interface OdeMessages extends Messages {
   @Description("")
   String ActionProperties();
 
-  @DefaultMessage("ActivityClass")
+  @DefaultMessage("Activity Class")
   @Description("")
   String ActivityClassProperties();
 
-  @DefaultMessage("ActivityPackage")
+  @DefaultMessage("Activity Package")
   @Description("")
   String ActivityPackageProperties();
 
-  @DefaultMessage("AlignHorizontal")
+  @DefaultMessage("Align Horizontal")
   @Description("")
   String AlignHorizontalProperties();
 
-  @DefaultMessage("AlignVertical")
+  @DefaultMessage("Align Vertical")
   @Description("")
   String AlignVerticalProperties();
 
-  @DefaultMessage("AllowCookies")
+  @DefaultMessage("Allow Cookies")
   @Description("")
   String AllowCookiesProperties();
 
-  @DefaultMessage("ApiKey")
+  @DefaultMessage("API Key")
   @Description("")
   String ApiKeyProperties();
 
-  @DefaultMessage("AppName")
+  @DefaultMessage("App Name")
   @Description("")
   String AppNameProperties();
 
-  @DefaultMessage("AvailableCountries")
+  @DefaultMessage("Available Countries")
   @Description("")
   String AvailableCountriesProperties();
 
-  @DefaultMessage("AvailableLanguages")
+  @DefaultMessage("Available Languages")
   @Description("")
   String AvailableLanguagesProperties();
 
-  @DefaultMessage("BackgroundColor")
+  @DefaultMessage("Background Color")
   @Description("")
   String BackgroundColorProperties();
 
-  @DefaultMessage("BackgroundImage")
+  @DefaultMessage("Background Image")
   @Description("")
   String BackgroundImageProperties();
 
-  @DefaultMessage("BelowRangeEventEnabled")
+  @DefaultMessage("BelowRangeEvent Enabled")
   @Description("")
   String BelowRangeEventEnabledProperties();
 
-  @DefaultMessage("BluetoothClient")
+  @DefaultMessage("Bluetooth Client")
   @Description("")
   String BluetoothClientProperties();
 
@@ -2758,7 +2756,7 @@ public interface OdeMessages extends Messages {
   @Description("")
   String CalibrateStrideLengthProperties();
 
-  @DefaultMessage("CharacterEncoding")
+  @DefaultMessage("Character Encoding")
   @Description("")
   String CharacterEncodingProperties();
 
@@ -2766,11 +2764,11 @@ public interface OdeMessages extends Messages {
   @Description("")
   String CheckedProperties();
 
-  @DefaultMessage("CloseScreenAnimation")
+  @DefaultMessage("Close Screen Animation")
   @Description("")
   String CloseScreenAnimationProperties();
 
-  @DefaultMessage("ColorChangedEventEnabled")
+  @DefaultMessage("ColorChangedEvent Enabled")
   @Description("")
   String ColorChangedEventEnabledProperties();
 
@@ -2778,11 +2776,11 @@ public interface OdeMessages extends Messages {
   @Description("")
   String ColumnsProperties();
 
-  @DefaultMessage("ConsumerKey")
+  @DefaultMessage("Consumer Key")
   @Description("")
   String ConsumerKeyProperties();
 
-  @DefaultMessage("ConsumerSecret")
+  @DefaultMessage("Consumer Secret")
   @Description("")
   String ConsumerSecretProperties();
 
@@ -2790,27 +2788,27 @@ public interface OdeMessages extends Messages {
   @Description("")
   String CountryProperties();
 
-  @DefaultMessage("DataType")
+  @DefaultMessage("Data Type")
   @Description("")
   String DataTypeProperties();
 
-  @DefaultMessage("DataUri")
+  @DefaultMessage("Data URL")
   @Description("")
   String DataUriProperties();
 
-  @DefaultMessage("DelimiterByte")
+  @DefaultMessage("Delimiter Byte")
   @Description("")
   String DelimiterByteProperties();
 
-  @DefaultMessage("DetectColor")
+  @DefaultMessage("Detect Color")
   @Description("")
   String DetectColorProperties();
 
-  @DefaultMessage("DistanceInterval")
+  @DefaultMessage("Distance Interval")
   @Description("")
   String DistanceIntervalProperties();
 
-  @DefaultMessage("DriveMotors")
+  @DefaultMessage("Drive Motors")
   @Description("")
   String DriveMotorsProperties();
 
@@ -2818,11 +2816,11 @@ public interface OdeMessages extends Messages {
   @Description("")
   String EnabledProperties();
 
-  @DefaultMessage("ExtraKey")
+  @DefaultMessage("Extra Key")
   @Description("")
   String ExtraKeyProperties();
 
-  @DefaultMessage("ExtraValue")
+  @DefaultMessage("Extra Value")
   @Description("")
   String ExtraValueProperties();
 
@@ -2830,35 +2828,35 @@ public interface OdeMessages extends Messages {
   @Description("")
   String ExtrasProperties();
 
-  @DefaultMessage("FollowLinks")
+  @DefaultMessage("Follow Links")
   @Description("")
   String FollowLinksProperties();
 
-  @DefaultMessage("FontBold")
+  @DefaultMessage("Font Bold")
   @Description("")
   String FontBoldProperties();
 
-  @DefaultMessage("FontItalic")
+  @DefaultMessage("Font Italic")
   @Description("")
   String FontItalicProperties();
 
-  @DefaultMessage("FontSize")
+  @DefaultMessage("Font Size")
   @Description("")
   String FontSizeProperties();
 
-  @DefaultMessage("FontTypeface")
+  @DefaultMessage("Font")
   @Description("")
   String FontTypefaceProperties();
 
-  @DefaultMessage("GameId")
+  @DefaultMessage("Game ID")
   @Description("")
   String GameIdProperties();
 
-  @DefaultMessage("GenerateColor")
+  @DefaultMessage("Generate Color")
   @Description("")
   String GenerateColorProperties();
 
-  @DefaultMessage("GenerateLight")
+  @DefaultMessage("Generate Light")
   @Description("")
   String GenerateLightProperties();
 
@@ -2918,11 +2916,11 @@ public interface OdeMessages extends Messages {
   @Description("")
   String LanguageProperties();
 
-  @DefaultMessage("LineWidth")
+  @DefaultMessage("Line Width")
   @Description("")
   String LineWidthProperties();
 
-  @DefaultMessage("LoadingDialogMessage")
+  @DefaultMessage("Loading Dialog Message")
   @Description("")
   String LoadingDialogMessageProperties();
 
@@ -2930,11 +2928,11 @@ public interface OdeMessages extends Messages {
   @Description("")
   String MessageProperties();
 
-  @DefaultMessage("MinimumInterval (ms)")
+  @DefaultMessage("Minimum Interval (ms)")
   @Description("")
   String MinimumIntervalProperties();
 
-  @DefaultMessage("MultiLine")
+  @DefaultMessage("Multi Line")
   @Description("")
   String MultiLineProperties();
 
@@ -2946,19 +2944,19 @@ public interface OdeMessages extends Messages {
   @Description("")
   String NumbersOnlyProperties();
 
-  @DefaultMessage("OpenScreenAnimation")
+  @DefaultMessage("Open Screen Animation")
   @Description("")
   String OpenScreenAnimationProperties();
 
-  @DefaultMessage("PaintColor")
+  @DefaultMessage("Paint Color")
   @Description("")
   String PaintColorProperties();
 
-  @DefaultMessage("PhoneNumber")
+  @DefaultMessage("Phone Number")
   @Description("")
   String PhoneNumberProperties();
 
-  @DefaultMessage("PhoneNumber")
+  @DefaultMessage("Phone Number")
   @Description("")
   String phoneNumberParams();
 
@@ -2970,11 +2968,11 @@ public interface OdeMessages extends Messages {
   @Description("")
   String PictureProperties();
 
-  @DefaultMessage("PressedEventEnabled")
+  @DefaultMessage("PressedEvent Enabled")
   @Description("")
   String PressedEventEnabledProperties();
 
-  @DefaultMessage("PromptforPermission")
+  @DefaultMessage("Prompt for Permission")
   @Description("")
   String PromptforPermissionProperties();
 
@@ -3026,7 +3024,7 @@ public interface OdeMessages extends Messages {
   @Description("")
   String SensorPortProperties();
 
-  @DefaultMessage("ScreenOrientation")
+  @DefaultMessage("Screen Orientation")
   @Description("")
   String ScreenOrientationProperties();
 
@@ -3038,15 +3036,15 @@ public interface OdeMessages extends Messages {
   @Description("")
   String ServiceAccountEmailProperties();
 
-  @DefaultMessage("ServiceURL")
+  @DefaultMessage("Service URL")
   @Description("")
   String ServiceURLProperties();
 
-  @DefaultMessage("ShowLoadingDialog")
+  @DefaultMessage("Show Loading Dialog")
   @Description("")
   String ShowLoadingDialogProperties();
 
-  @DefaultMessage("FirebaseURL")
+  @DefaultMessage("Firebase URL")
   @Description("")
   String FirebaseURLProperties();
 
@@ -3078,7 +3076,7 @@ public interface OdeMessages extends Messages {
   @Description("")
   String ShapeProperties();
 
-  @DefaultMessage("ShowFeedback")
+  @DefaultMessage("Show Feedback")
   @Description("")
   String ShowFeedbackProperties();
 
@@ -3110,11 +3108,11 @@ public interface OdeMessages extends Messages {
   @Description("")
   String TextProperties();
 
-  @DefaultMessage("TextAlignment")
+  @DefaultMessage("Text Alignment")
   @Description("")
   String TextAlignmentProperties();
 
-  @DefaultMessage("TextColor")
+  @DefaultMessage("Text Color")
   @Description("")
   String TextColorProperties();
 
@@ -3122,11 +3120,11 @@ public interface OdeMessages extends Messages {
   @Description("")
   String TimerAlwaysFiresProperties();
 
-  @DefaultMessage("TimerEnabled")
+  @DefaultMessage("Timer Enabled")
   @Description("")
   String TimerEnabledProperties();
 
-  @DefaultMessage("TimerInterval")
+  @DefaultMessage("Timer Interval")
   @Description("")
   String TimerIntervalProperties();
 
@@ -3134,39 +3132,39 @@ public interface OdeMessages extends Messages {
   @Description("")
   String TitleProperties();
 
-  @DefaultMessage("TopOfRange")
+  @DefaultMessage("Top Of Range")
   @Description("")
   String TopOfRangeProperties();
 
-  @DefaultMessage("Url")
+  @DefaultMessage("URL")
   @Description("")
   String UrlProperties();
 
-  @DefaultMessage("UseFront")
+  @DefaultMessage("Use Front")
   @Description("")
   String UseFrontProperties();
 
-  @DefaultMessage("UseGPS")
+  @DefaultMessage("Use GPS")
   @Description("")
   String UseGPSProperties();
 
-  @DefaultMessage("UseServiceAuthentication")
+  @DefaultMessage("Use Service Authentication")
   @Description("")
   String UseServiceAuthenticationProperties();
 
-  @DefaultMessage("UsesLocationVisible")
+  @DefaultMessage("Uses Location Visible")
   @Description("")
   String UsesLocationVisibleProperties();
 
-  @DefaultMessage("VersionCode")
+  @DefaultMessage("Version Code")
   @Description("")
   String VersionCodeProperties();
 
-  @DefaultMessage("VersionName")
+  @DefaultMessage("Version Name")
   @Description("")
   String VersionNameProperties();
 
-  @DefaultMessage("TutorialURL")
+  @DefaultMessage("Tutorial URL")
   @Description("")
   String TutorialURLProperties();
 
@@ -3174,7 +3172,7 @@ public interface OdeMessages extends Messages {
   @Description("")
   String SizingProperties();
 
-  @DefaultMessage("ShowListsAsJson")
+  @DefaultMessage("Show List As Json")
   @Description("")
   String ShowListsAsJsonProperties();
 
@@ -3222,7 +3220,7 @@ public interface OdeMessages extends Messages {
   @Description("")
   String RotatesProperties();
 
-  @DefaultMessage("RotationAngle")
+  @DefaultMessage("Rotation Angle")
   @Description("")
   String RotationAngleProperties();
 
@@ -3230,23 +3228,23 @@ public interface OdeMessages extends Messages {
   @Description("")
   String SelectionProperties();
 
-  @DefaultMessage("TimeInterval")
+  @DefaultMessage("Time Interval")
   @Description("")
   String TimeIntervalProperties();
 
-  @DefaultMessage("UsesLocation")
+  @DefaultMessage("Uses Location")
   @Description("")
   String UsesLocationProperties();
 
-  @DefaultMessage("ShowFilterBar")
+  @DefaultMessage("Show Filter Bar")
   @Description("")
   String ShowFilterBarProperties();
 
-  @DefaultMessage("TextSize")
+  @DefaultMessage("Text Size")
   @Description("")
   String TextSizeProperties();
 
-  @DefaultMessage("NotifierLength")
+  @DefaultMessage("Notifier Length")
   @Description("")
   String NotifierLengthProperties();
 
@@ -3438,7 +3436,7 @@ public interface OdeMessages extends Messages {
   @Description("")
   String FriendTimelineProperties();
 
-  @DefaultMessage("FullScreen")
+  @DefaultMessage("Full Screen")
   @Description("")
   String FullScreenProperties();
 
@@ -3458,7 +3456,7 @@ public interface OdeMessages extends Messages {
   @Description("")
   String HeightProperties();
 
-  @DefaultMessage("HeightPercent")
+  @DefaultMessage("Height Percent")
   @Description("")
   String HeightPercentProperties();
 
@@ -3847,7 +3845,7 @@ public interface OdeMessages extends Messages {
   @Description("")
   String angleParams();
 
-  @DefaultMessage("fileName")
+  @DefaultMessage("File Name")
   @Description("")
   String fileNameParams();
 
@@ -4043,7 +4041,7 @@ public interface OdeMessages extends Messages {
   @Description("")
   String noticeParams();
 
-  @DefaultMessage("title")
+  @DefaultMessage("Title")
   @Description("")
   String titleParams();
 
@@ -5843,7 +5841,7 @@ public interface OdeMessages extends Messages {
   @Description("")
   String AccelerometerSensorHelpStringComponentPallette();
 
-  @DefaultMessage("A component that can launch an activity using the <code>StartActivity</code> method.<p>Activities that can be launched include: <ul> \n<li> starting other App Inventor for Android apps </li> \n<li> starting the camera application </li> \n<li> performing web search </li> \n<li> opening a browser to a specified web page</li> \n<li> opening the map application to a specified location</li></ul> \nYou can also launch activities that return text data.  See the documentation on using the Activity Starter for examples.</p>")
+  @DefaultMessage("A component that can launch an activity using the <code>StartActivity</code> method.<p>Activities that can be launched include: <ul> \n<li> starting other HydrIDE for Android apps </li> \n<li> starting the camera application </li> \n<li> performing web search </li> \n<li> opening a browser to a specified web page</li> \n<li> opening the map application to a specified location</li></ul> \nYou can also launch activities that return text data.  See the documentation on using the Activity Starter for examples.</p>")
   @Description("")
   String ActivityStarterHelpStringComponentPallette();
 
@@ -5950,7 +5948,7 @@ public interface OdeMessages extends Messages {
   @Description("")
   String FormHelpStringComponentPallette();
 
-  @DefaultMessage("<p>A non-visible component that communicates with Google Fusion Tables.  Fusion Tables let you store, share, query and visualize data tables; this component lets you query, create, and modify these tables.</p> <p>This component uses the <a href=\"https://developers.google.com/fusiontables/docs/v2/getting_started\" target=\"_blank\">Fusion Tables API V2.0</a>.  <p>Applications using Fusion Tables must authentication to Google\"s servers. There are two ways this can be done. The first way uses an API Key which you the developer obtain (see below). With this approach end-users must also login to access a Fusion Table.  The second approach is to use a Service Account. With this approach you create credentials and a special \"Service Account Email Address\" which you obtain from the <a href=\"https://code.google.com/apis/console/\" target=\"_blank\">Google APIs Console</a>.  You then tell the Fusion Table Control the name of the Service Account Email address and upload the secret key as an asset to your application and set the KeyFile property to point at this file. Finally you check the \"UseServiceAuthentication\" checkbox in the designer.  When using a Service Account, end-users do not need to login to use Fusion Tables, your service account authenticates all access.</p> <p>To get an API key, follow these instructions.</p> <ol> <li>Go to your <a href=\"https://code.google.com/apis/console/\" target=\"_blank\">Google APIs Console</a> and login if necessary.</li> <li>Select the <i>Services</i> item from the menu on the left.</li> <li>Choose the <i>Fusiontables</i> service from the list provided and turn it on.</li> <li>Go back to the main menu and select the <i>API Access</i> item. </li> </ol> <p>Your API Key will be near the bottom of that pane in the section called \"Simple API Access\".  You will have to provide that key as the value for the <i>ApiKey</i> property in your Fusiontables app.</p> <p>Once you have an API key, set the value of the <i>Query</i> property to a valid Fusiontables SQL query and call <i>SendQuery</i> to execute the query.  App Inventor will send the query to the Fusion Tables server and the <i>GotResult</i> block will fire when a result is returned from the server.  Query results will be returned in CSV format, and can be converted to list format using the \"list from csv table\" or \"list from csv row\" blocks.</p> <p>Note that you do not need to worry about UTF-encoding the query.  But you do need to make sure the query follows the syntax described in <a href=\"https://developers.google.com/fusiontables/docs/v2/getting_started\" target=\"_blank\">the reference manual</a>, which means that things like capitalization for names of columns matters, and that single quotes must be used around column names if there are spaces in them.</p>")
+  @DefaultMessage("<p>A non-visible component that communicates with Google Fusion Tables.  Fusion Tables let you store, share, query and visualize data tables; this component lets you query, create, and modify these tables.</p> <p>This component uses the <a href=\"https://developers.google.com/fusiontables/docs/v2/getting_started\" target=\"_blank\">Fusion Tables API V2.0</a>.  <p>Applications using Fusion Tables must authentication to Google\"s servers. There are two ways this can be done. The first way uses an API Key which you the developer obtain (see below). With this approach end-users must also login to access a Fusion Table.  The second approach is to use a Service Account. With this approach you create credentials and a special \"Service Account Email Address\" which you obtain from the <a href=\"https://code.google.com/apis/console/\" target=\"_blank\">Google APIs Console</a>.  You then tell the Fusion Table Control the name of the Service Account Email address and upload the secret key as an asset to your application and set the KeyFile property to point at this file. Finally you check the \"UseServiceAuthentication\" checkbox in the designer.  When using a Service Account, end-users do not need to login to use Fusion Tables, your service account authenticates all access.</p> <p>To get an API key, follow these instructions.</p> <ol> <li>Go to your <a href=\"https://code.google.com/apis/console/\" target=\"_blank\">Google APIs Console</a> and login if necessary.</li> <li>Select the <i>Services</i> item from the menu on the left.</li> <li>Choose the <i>Fusiontables</i> service from the list provided and turn it on.</li> <li>Go back to the main menu and select the <i>API Access</i> item. </li> </ol> <p>Your API Key will be near the bottom of that pane in the section called \"Simple API Access\".  You will have to provide that key as the value for the <i>ApiKey</i> property in your Fusiontables app.</p> <p>Once you have an API key, set the value of the <i>Query</i> property to a valid Fusiontables SQL query and call <i>SendQuery</i> to execute the query.  HydrIDE will send the query to the Fusion Tables server and the <i>GotResult</i> block will fire when a result is returned from the server.  Query results will be returned in CSV format, and can be converted to list format using the \"list from csv table\" or \"list from csv row\" blocks.</p> <p>Note that you do not need to worry about UTF-encoding the query.  But you do need to make sure the query follows the syntax described in <a href=\"https://developers.google.com/fusiontables/docs/v2/getting_started\" target=\"_blank\">the reference manual</a>, which means that things like capitalization for names of columns matters, and that single quotes must be used around column names if there are spaces in them.</p>")
   @Description("")
   String FusiontablesControlHelpStringComponentPallette();
 
@@ -6002,7 +6000,7 @@ public interface OdeMessages extends Messages {
   @Description("")
   String MediaStoreHelpStringComponentPallette();
 
-  @DefaultMessage("<p>Non-visible component to provide NFC capabilities.  For now this component supports the reading and writing of text tags only (if supported by the device)</p><p>In order to read and write text tags, the component must have its <code>ReadMode</code> property set to True or False respectively.</p><p><strong>Note:</strong> This component will only work on Screen1 of any App Inventor app.</p>")
+  @DefaultMessage("<p>Non-visible component to provide NFC capabilities.  For now this component supports the reading and writing of text tags only (if supported by the device)</p><p>In order to read and write text tags, the component must have its <code>ReadMode</code> property set to True or False respectively.</p><p><strong>Note:</strong> This component will only work on Screen1 of any HydrIDE app.</p>")
   @Description("")
   String NearFieldHelpStringComponentPallette();
 
@@ -6118,7 +6116,7 @@ public interface OdeMessages extends Messages {
   @Description("")
   String TimePickerHelpStringComponentPallette();
 
-  @DefaultMessage("TinyDB is a non-visible component that stores data for an app. <p> Apps created with App Inventor are initialized each time they run: If an app sets the value of a variable and the user then quits the app, the value of that variable will not be remembered the next time the app is run. In contrast, TinyDB is a <em> persistent </em> data store for the app, that is, the data stored there will be available each time the app is run. An example might be a game that saves the high score and retrieves it each time the game is played. </<p> <p> Data items are strings stored under <em>tags</em> . To store a data item, you specify the tag it should be stored under.  Subsequently, you can retrieve the data that was stored under a given tag. </p><p> There is only one data store per app. Even if you have multiple TinyDB components, they will use the same data store. To get the effect of separate stores, use different keys. Also each app has its own data store. You cannot use TinyDB to pass data between two different apps on the phone, although you <em>can</em> use TinyDb to shares data between the different screens of a multi-screen app. </p> <p>When you are developing apps using the AI Companion, all the apps using that companion will share the same TinyDb.  That sharing will disappear once the apps are packaged.  But, during development, you should be careful to clear the TinyDb each time you start working on a new app.</p>")
+  @DefaultMessage("TinyDB is a non-visible component that stores data for an app. <p> Apps created with HydrIDE are initialized each time they run: If an app sets the value of a variable and the user then quits the app, the value of that variable will not be remembered the next time the app is run. In contrast, TinyDB is a <em> persistent </em> data store for the app, that is, the data stored there will be available each time the app is run. An example might be a game that saves the high score and retrieves it each time the game is played. </<p> <p> Data items are strings stored under <em>tags</em> . To store a data item, you specify the tag it should be stored under.  Subsequently, you can retrieve the data that was stored under a given tag. </p><p> There is only one data store per app. Even if you have multiple TinyDB components, they will use the same data store. To get the effect of separate stores, use different keys. Also each app has its own data store. You cannot use TinyDB to pass data between two different apps on the phone, although you <em>can</em> use TinyDb to shares data between the different screens of a multi-screen app. </p> <p>When you are developing apps using the AI Companion, all the apps using that companion will share the same TinyDb.  That sharing will disappear once the apps are packaged.  But, during development, you should be careful to clear the TinyDb each time you start working on a new app.</p>")
   @Description("")
   String TinyDBHelpStringComponentPallette();
 
@@ -6138,7 +6136,7 @@ public interface OdeMessages extends Messages {
   @Description("")
   String VerticalScrollArrangementHelpStringComponentPallette();
 
-  @DefaultMessage("A multimedia component capable of playing videos. When the application is run, the VideoPlayer will be displayed as a rectangle on-screen.  If the user touches the rectangle, controls will appear to play/pause, skip ahead, and skip backward within the video.  The application can also control behavior by calling the <code>Start</code>, <code>Pause</code>, and <code>SeekTo</code> methods.  <p>Video files should be in Windows Media Video (.wmv) format, 3GPP (.3gp), or MPEG-4 (.mp4).  For more details about legal formats, see <a href=\"http://developer.android.com/guide/appendix/media-formats.html\" target=\"_blank\">Android Supported Media Formats</a>.</p><p>App Inventor for Android only permits video files under 1 MB and limits the total size of an application to 5 MB, not all of which is available for media (video, audio, and sound) files.  If your media files are too large, you may get errors when packaging or installing your application, in which case you should reduce the number of media files or their sizes.  Most video editing software, such as Windows Movie Maker and Apple iMovie, can help you decrease the size of videos by shortening them or re-encoding the video into a more compact format.</p><p>You can also set the media source to a URL that points to a streaming video, but the URL must point to the video file itself, not to a program that plays the video.")
+  @DefaultMessage("A multimedia component capable of playing videos. When the application is run, the VideoPlayer will be displayed as a rectangle on-screen.  If the user touches the rectangle, controls will appear to play/pause, skip ahead, and skip backward within the video.  The application can also control behavior by calling the <code>Start</code>, <code>Pause</code>, and <code>SeekTo</code> methods.  <p>Video files should be in Windows Media Video (.wmv) format, 3GPP (.3gp), or MPEG-4 (.mp4).  For more details about legal formats, see <a href=\"http://developer.android.com/guide/appendix/media-formats.html\" target=\"_blank\">Android Supported Media Formats</a>.</p><p>HydrIDE for Android only permits video files under 1 MB and limits the total size of an application to 5 MB, not all of which is available for media (video, audio, and sound) files.  If your media files are too large, you may get errors when packaging or installing your application, in which case you should reduce the number of media files or their sizes.  Most video editing software, such as Windows Movie Maker and Apple iMovie, can help you decrease the size of videos by shortening them or re-encoding the video into a more compact format.</p><p>You can also set the media source to a URL that points to a streaming video, but the URL must point to the video file itself, not to a program that plays the video.")
   @Description("")
   String VideoPlayerHelpStringComponentPallette();
 
@@ -6160,7 +6158,7 @@ public interface OdeMessages extends Messages {
 
   @DefaultMessage("A non-visible component allowing you to store data on a Web database powered by Firebase. " +
       "This allows the users of your app to share data with each other. " +
-      "By default, data will be stored in App Inventor''s shared Firebase database. " +
+      "By default, data will be stored in HydrIDE''s shared Firebase database. " +
       "Otherwise, you can specify the URL for your own Firebase in the \"FirebaseURL\" property. " +
       "Learn more at <a target=\"_blank\" href=\"http://www.firebase.com\">Firebase.com</a>.")
   @Description("")
@@ -6168,22 +6166,20 @@ public interface OdeMessages extends Messages {
 
 
   //Ode.java messages
-  @DefaultMessage("Welcome to App Inventor 2!")
+  @DefaultMessage("Welcome to HydrIDE!")
   @Description("")
   String createNoProjectsDialogText();
 
-  @DefaultMessage("You do not have any projects in App Inventor 2. " +
-      "To learn how to use App Inventor, click the \"Guide\" " +
-      "link at the top of the window; or to start your first project, " +
-      "click the \"Start New Project\" button at the upper left of the window.")
+  @DefaultMessage("Wow ! Nothing is here !" +
+      "click the \"New Project\" button to create a new project.")
   @Description("")
   String createNoProjectsDialogMessage1();
 
-  @DefaultMessage("Happy Inventing!")
+  @DefaultMessage("Happy Coding!")
   @Description("")
   String createNoprojectsDialogMessage2();
 
-  @DefaultMessage("Welcome to App Inventor!")
+  @DefaultMessage("Welcome to HydrIDE!")
   @Description("")
   String createWelcomeDialogText();
 
@@ -6195,7 +6191,7 @@ public interface OdeMessages extends Messages {
   @Description("")
   String doNotShow();
 
-  @DefaultMessage("<h2>Please fill out a short voluntary survey so that we can learn more about our users and improve MIT App Inventor.</h2>")
+  @DefaultMessage("<h2>Please fill out a short voluntary survey so that we can learn more about our users and improve MIT HydrIDE.</h2>")
   @Description("")
   String showSurveySplashMessage();
 
@@ -6216,7 +6212,7 @@ public interface OdeMessages extends Messages {
   String invalidSessionDialogText();
 
   @DefaultMessage("<p><font color=red>Warning:</font> This session is out of date.</p>" +
-                "<p>This App Inventor account has been opened from another location. " +
+                "<p>This HydrIDE account has been opened from another location. " +
                 "Using a single account from more than one location at the same time " +
                 "can damage your projects.</p>" +
                 "<p>Choose one of the buttons below to:" +
@@ -6247,13 +6243,13 @@ public interface OdeMessages extends Messages {
 
   @DefaultMessage("<p><font color=red>WARNING:</font> A second App " +
                 "Inventor session has been opened for this account. You may choose to " +
-                "continue with both sessions, but working with App Inventor from more " +
+                "continue with both sessions, but working with HydrIDE from more " +
                 "than one session simultaneously can cause blocks to be lost in ways " +
-                "that cannot be recovered from the App Inventor server.</p><p>" +
+                "that cannot be recovered from the HydrIDE server.</p><p>" +
                 "We recommend that people not open multiple sessions on the same " +
                 "account. But if you do need to work in this way, then you should " +
                 "regularly export your project to your local computer, so you will " +
-                "have a backup copy independent of the App Inventor server. Use " +
+                "have a backup copy independent of the HydrIDE server. Use " +
                 "\"Export\" from the Projects menu to export the project.</p>")
   @Description("")
   String bashWarningDialogMessage();
@@ -6325,11 +6321,11 @@ public interface OdeMessages extends Messages {
   @Description("")
   String GetRowsWithConditionsMethods();
 
-  @DefaultMessage("简体中文")
+  @DefaultMessage("中文(简体)")
   @Description("")
   String SwitchToSimplifiedChinese();
 
-  @DefaultMessage("繁体中文")
+  @DefaultMessage("中文(繁體)")
   @Description("")
   String SwitchToTraditionalChinese();
 
@@ -6520,11 +6516,11 @@ public interface OdeMessages extends Messages {
   @Description("")
   String firebaseExperimentalWarning();
 
-  @DefaultMessage("You are in Read Only Mode")
+  @DefaultMessage("Read Only Mode")
   @Description("")
   String readOnlyMode();
 
-  @DefaultMessage("Either your session has expired, or App Inventor has been upgraded. " +
+  @DefaultMessage("Either your session has expired, or HydrIDE has been upgraded. " +
     "You will need to \"Reload\" your session to continue. Press the \"Reload\" Button " +
     "below.")
   @Description("")
@@ -6534,11 +6530,11 @@ public interface OdeMessages extends Messages {
   @Description("")
   String reloadWindow();
 
-  @DefaultMessage("AccountName")
+  @DefaultMessage("Account Name")
   @Description("")
   String AccountNameProperties();
 
-  @DefaultMessage("ProjectID")
+  @DefaultMessage("Project ID")
   @Description("")
   String ProjectIDProperties();
 
@@ -6591,35 +6587,35 @@ public interface OdeMessages extends Messages {
   @Description("")
   String CloudConnectedMethods();
 
-  @DefaultMessage("PrimaryColor")
+  @DefaultMessage("PrimaryColor(Title Bar)")
   @Description("")
   String PrimaryColorProperties();
 
-  @DefaultMessage("PrimaryColorDark")
+  @DefaultMessage("PrimaryColorDark(Status Bar)")
   @Description("")
   String PrimaryColorDarkProperties();
 
-  @DefaultMessage("AccentColor")
+  @DefaultMessage("AccentColor(Items)")
   @Description("")
   String AccentColorProperties();
 
-  @DefaultMessage("Theme")
+  @DefaultMessage("UI Theme")
   @Description("")
   String ThemeProperties();
 
-  @DefaultMessage("Classic")
+  @DefaultMessage("Android Classic")
   @Description("")
   String classicTheme();
 
-  @DefaultMessage("Device Default")
+  @DefaultMessage("Material Theme (Default)")
   @Description("")
   String defaultTheme();
 
-  @DefaultMessage("Black Title Text")
+  @DefaultMessage("Material Light Theme")
   @Description("")
   String blackTitleTheme();
 
-  @DefaultMessage("Dark")
+  @DefaultMessage("Material Dark Theme")
   @Description("")
   String darkTheme();
 
