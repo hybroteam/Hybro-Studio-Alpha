@@ -54,11 +54,11 @@ public interface OdeMessages extends Messages {
   @Description("Text on \"Delete Project\" button")
   String deleteProjectButton();
 
-  @DefaultMessage("Publish Project")
+  @DefaultMessage("Publish to Gallery")
   @Description("Text on \"Publish to Gallery\" button")
   String publishToGalleryButton();
 
-  @DefaultMessage("Update App")
+  @DefaultMessage("Update Gallery App")
   @Description("Text on \"Update Gallery App\" button")
   String updateGalleryAppButton();
 
@@ -70,7 +70,7 @@ public interface OdeMessages extends Messages {
   @Description("Text on Toggle Warning Button")
   String hideWarnings();
 
-  @DefaultMessage("Upload Files")
+  @DefaultMessage("Upload File ...")
   @Description("Text on \"Add...\" button")
   String addButton();
 
@@ -106,7 +106,7 @@ public interface OdeMessages extends Messages {
   @Description("Label for the Toggle Tutorial Button")
   String toggleTutorialButton();
 
-  @DefaultMessage("New Screen")
+  @DefaultMessage("Add Screen ...")
   @Description("Label of the button for adding a new screen")
   String addFormButton();
 
@@ -132,11 +132,11 @@ public interface OdeMessages extends Messages {
   @Description("Label of the button for switching screens")
   String screensButton();
 
-  @DefaultMessage("Code")
+  @DefaultMessage("Blocks")
   @Description("Label of the button for switching to the blocks editor")
   String switchToBlocksEditorButton();
 
-  @DefaultMessage("Interface")
+  @DefaultMessage("Designer")
   @Description("Label of the button for switching to the form editor")
   String switchToFormEditorButton();
 
@@ -331,11 +331,11 @@ public interface OdeMessages extends Messages {
   @Description("Label of the Text of showing resolved reports of reportlist")
   String moderationShowResolvedReports();
 
-  @DefaultMessage("An Email from Hybro Studio Gallery")
+  @DefaultMessage("An Email from App Inventor Gallery")
   @Description("Title of the email when moderator sends out an email")
   String moderationSendEmailTitle();
 
-  @DefaultMessage("Hybro Studio Gallery: App Activated")
+  @DefaultMessage("App Inventor Gallery: App Activated")
   @Description("Title of the email when app was activated")
   String moderationAppReactivatedTitle();
 
@@ -343,7 +343,7 @@ public interface OdeMessages extends Messages {
   @Description("Body of the email when app was activated")
   String moderationAppReactivateBody(String title);
 
-  @DefaultMessage("Hybro Studio Gallery: App Deactivated")
+  @DefaultMessage("App Inventor Gallery: App Deactivated")
   @Description("Title of the email when app was deactivated")
   String moderationAppDeactivatedTitle();
 
@@ -360,8 +360,8 @@ public interface OdeMessages extends Messages {
 
   // Used in Ode.java
 
-  @DefaultMessage("Hybro Studio")
-  @Description("Title for Hybro Studio")
+  @DefaultMessage("MIT App Inventor")
+  @Description("Title for App Inventor")
   String titleYoungAndroid();
 
   @DefaultMessage("An internal error has occurred. Report a bug?")
@@ -443,15 +443,15 @@ public interface OdeMessages extends Messages {
   // Used in TopPanel.java
 
   //Project
-  @DefaultMessage("Project")
+  @DefaultMessage("Projects")
   @Description("Name of Projects tab")
   String projectsTabName();
 
-  @DefaultMessage("My Projects")
+  @DefaultMessage("My projects")
   @Description("Name of My projects menuitem")
   String projectMenuItem();
 
-  @DefaultMessage("Create New project")
+  @DefaultMessage("Start new project")
   @Description("Label of the menu item for creating a new project")
   String newProjectMenuItem();
 
@@ -475,11 +475,11 @@ public interface OdeMessages extends Messages {
   @Description("Name of Checkpoint menuitem")
   String checkpointMenuItem();
 
-  @DefaultMessage("Start New Project with Template")
+  @DefaultMessage("Import project (.aia) from a repository ...")
   @Description("Name of Import Template menuitem")
   String importTemplateButton();
 
-  @DefaultMessage("Export the selected project (.aia)")
+  @DefaultMessage("Export selected project (.aia) to my computer")
   @Description("Name of Export Project menuitem")
   String exportProjectMenuItem();
 
@@ -512,7 +512,7 @@ public interface OdeMessages extends Messages {
   @Description("Name of Start new component menuitem")
   String startNewComponentMenuItem();
 
-  @DefaultMessage("Import component")
+  @DefaultMessage("Import component to project ...")
   @Description("Name of Import component menuitem")
   String importComponentMenuItem();
 
@@ -524,11 +524,11 @@ public interface OdeMessages extends Messages {
   @Description("Name of Build component menuitem")
   String buildComponentMenuItem();
 
-  @DefaultMessage("Upload component (.aix)")
+  @DefaultMessage("Upload component (.aix) from my computer ...")
   @Description("Name of Upload component menuitem")
   String uploadComponentMenuItem();
 
-  @DefaultMessage("Upload Component")
+  @DefaultMessage("Upload Component...")
   @Description("Caption for component upload wizard.")
   String componentUploadWizardCaption();
 
@@ -557,7 +557,7 @@ public interface OdeMessages extends Messages {
   String componentUpgradedAlert();
 
   @DefaultMessage("The selected file is not a component file!\n" +
-      "Component files are .aix files.")
+      "Component files are aix files.")
   @Description("Error message reported when the file selected for upload is not a component archive.")
   String notComponentArchiveError();
 
@@ -581,16 +581,16 @@ public interface OdeMessages extends Messages {
   @Description("Header for version column of component table")
   String componentVersionHeader();
 
-  @DefaultMessage("Are you sure you want to delete the component(s): {0}?")
+  @DefaultMessage("Are you really sure you want to delete the component(s): {0}?")
   @Description("Confirmation message for deleting component(s)")
   String confirmDeleteComponents(String componentNames);
 
-  @DefaultMessage("Upload")
+  @DefaultMessage("From my computer")
   @Description("")
   String componentImportFromComputer();
 
-  @DefaultMessage("Store")
-  @Description("For importing from Store")
+  @DefaultMessage("URL")
+  @Description("For importing from a URL")
   String componentImportFromURL();
 
   @DefaultMessage("The component database in the project \"{0}\" is corrupt.")
@@ -601,20 +601,20 @@ public interface OdeMessages extends Messages {
   @Description("Error message when the component descriptors for an extension are not parsable.")
   String extensionDescriptorCorrupt(String extensionName, String projectName);
 
-  @DefaultMessage("The project \"{0}\" contains an invalid extension. Hybro Studio will attempt to continue.")
+  @DefaultMessage("The project \"{0}\" contains an invalid extension. App Inventor will attempt to continue.")
   @Description("Error message when an extension descriptor pathname does not have the correct structure.")
   String invalidExtensionInProject(String projectName);
 
   //Connect
-  @DefaultMessage("Tool")
+  @DefaultMessage("Connect")
   @Description("Label of the button leading to Connect related cascade items")
   String connectTabName();
 
-  @DefaultMessage("Hybro Studio Companion")
+  @DefaultMessage("AI Companion")
   @Description("Message providing details about starting the wireless connection.")
   String AICompanionMenuItem();
 
-  @DefaultMessage("App Emulator")
+  @DefaultMessage("Emulator")
   @Description("Message providing details about starting the emulator connection.")
   String emulatorMenuItem();
 
@@ -651,23 +651,23 @@ public interface OdeMessages extends Messages {
   String hardResetConnectionsMenuItem();
 
   //Build
-  @DefaultMessage("Export")
+  @DefaultMessage("Build")
   @Description("Label of the button leading to build related cascade items")
   String buildTabName();
 
-  @DefaultMessage("Export App For Android")
+  @DefaultMessage("App ( provide QR code for .apk )")
   @Description("Label of item for building a project and show barcode")
   String showBarcodeMenuItem();
 
-  @DefaultMessage("Export Android (Server 2)")
+  @DefaultMessage("App for Google Play ( provide QR code for .apk )")
   @Description("Label of item for building a project and show barcode")
   String showBarcodeMenuItem2();
 
-  @DefaultMessage("Export App for iOS (Coming Soon)")
+  @DefaultMessage("App ( save .apk to my computer )")
   @Description("Label of item for building a project and downloading")
   String downloadToComputerMenuItem();
 
-  @DefaultMessage("Export iOS (Server 2)")
+  @DefaultMessage("App for Google Play ( save .apk to my computer )")
   @Description("Label of item for building a project and downloading")
   String downloadToComputerMenuItem2();
 
@@ -676,7 +676,7 @@ public interface OdeMessages extends Messages {
   String generateYailMenuItem();
 
   //Help
-  @DefaultMessage("More")
+  @DefaultMessage("Help")
   @Description("Label for the Help menu")
   String helpTabName();
 
@@ -684,11 +684,11 @@ public interface OdeMessages extends Messages {
   @Description("Label of the link for About")
   String aboutMenuItem();
 
-  @DefaultMessage("Companion Info")
+  @DefaultMessage("Companion Information")
   @Description("Information about the Companion")
   String companionInformation();
 
-  @DefaultMessage("Update Companion")
+  @DefaultMessage("Update the Companion")
   @Description("Menu item to update the Companion to the latest version")
   String companionUpdate();
 
@@ -696,11 +696,11 @@ public interface OdeMessages extends Messages {
   @Description("")
   String companionUpdateMustHaveProject();
 
-  @DefaultMessage("Show Welcome Page")
+  @DefaultMessage("Show Splash Screen")
   @Description("Redisplay the Splash Screen")
   String showSplashMenuItem();
 
-  @DefaultMessage("Documentation")
+  @DefaultMessage("Library")
   @Description("Name of Library link")
   String libraryMenuItem();
 
@@ -708,11 +708,11 @@ public interface OdeMessages extends Messages {
   @Description("Name of Getting Started link")
   String getStartedMenuItem();
 
-  @DefaultMessage("Extension Store")
+  @DefaultMessage("Extensions")
   @Description("Extensions link")
   String extensionsMenuItem();
 
-  @DefaultMessage("Tutorial")
+  @DefaultMessage("Tutorials")
   @Description("Name of Tutorials link")
   String tutorialsMenuItem();
 
@@ -720,7 +720,7 @@ public interface OdeMessages extends Messages {
   @Description("Name of Troubleshooting link")
   String troubleshootingMenuItem();
 
-  @DefaultMessage("Community")
+  @DefaultMessage("Forums")
   @Description("Name of Forums link")
   String forumsMenuItem();
 
@@ -729,7 +729,7 @@ public interface OdeMessages extends Messages {
   String feedbackMenuItem();
 
   //Admin
-  @DefaultMessage("Developer Panel")
+  @DefaultMessage("Admin")
   @Description("Label of the button leading to admin functionality")
   String adminTabName();
 
@@ -742,7 +742,7 @@ public interface OdeMessages extends Messages {
   String switchToDebugMenuItem();
 
   //Tabs
-  @DefaultMessage("")
+  @DefaultMessage("My Projects")
   @Description("Name of My Projects tab")
   String myProjectsTabName();
 
@@ -803,7 +803,7 @@ public interface OdeMessages extends Messages {
 
   // Used in boxes/MotdBox.java
 
-  @DefaultMessage("Welcome to Hybro Studio!")
+  @DefaultMessage("Welcome to App Inventor!")
   @Description("Initial caption for MOTD box.")
   String motdBoxCaption();
 
@@ -985,12 +985,15 @@ public interface OdeMessages extends Messages {
   @Description("Error shown when a new component type would be the same as a component instance name")
   String sameAsComponentInstanceNameError();
 
-  @DefaultMessage("Component name cannot be any of the following: CsvUtil, Double, Float, " +
+  @DefaultMessage("Name cannot be any of the following: CsvUtil, Double, Float, " +
       "Integer, JavaCollection, JavaIterator, KawaEnvironment, Long, Short, SimpleForm, String, " +
-      "Pattern, YailList, YailNumberToString, YailRuntimeError")
-  @Description("Error shown when a new component name is a variable name already used in the" +
-      "Yail code")
-  String badComponentNameError();
+      "Pattern, YailList, YailNumberToString, YailRuntimeError, abstract, continue, for, new, " +
+      "switch, assert, default, goto, package, synchronized, boolean, do, if, private, this, break, " +
+      "double, implements, protected, throw, byte, else, import, public, throws, case, enum, instanceof, " +
+      "return, transient, catch, extends, int, short, try, char, final, interface, static, void, class, " +
+      "finally, long, strictfp, volatile, const, float, native, super, while")
+  @Description("Error shown when a new name is a reserved name in Yail or Java code")
+  String reservedNameError();
 
   @DefaultMessage("Deleting this component will delete all blocks associated with it in the " +
       "Blocks Editor. Are you sure you want to delete?")
@@ -1039,6 +1042,10 @@ public interface OdeMessages extends Messages {
   @DefaultMessage("Extension Version:")
   @Description("Header for extension version information")
   String externalComponentVersion();
+
+  @DefaultMessage("Date Built:")
+  @Description("Header to indicate the date an extension was compiled")
+  String dateBuilt();
 
   @DefaultMessage("More information")
   @Description("Label of the link to a component's reference docs")
@@ -1367,7 +1374,7 @@ public interface OdeMessages extends Messages {
   @Description("Label in front of name in new screen dialog.")
   String formNameLabel();
 
-  @DefaultMessage("WARNING: The number of screens in this app might exceed the limits of Hybro Studio. " +
+  @DefaultMessage("WARNING: The number of screens in this app might exceed the limits of App Inventor. " +
                   "Click <a target=\"_blank\" href=\"/reference/other/manyscreens.html\">here</a> for advice about " +
                   "creating apps with many screens. " +
                   "<p>Do you really want to add another screen?</p>")
@@ -1408,9 +1415,9 @@ public interface OdeMessages extends Messages {
       "a build request.")
   String buildServerBusyError();
 
-  @DefaultMessage("The build server is not compatible with this version of Hybro Studio.")
+  @DefaultMessage("The build server is not compatible with this version of App Inventor.")
   @Description("Error message reported when the build server is running a different version of " +
-      "the Hybro Studio code.")
+      "the App Inventor code.")
   String buildServerDifferentVersion();
 
   @DefaultMessage("Unable to generate code for {0}.")
@@ -1460,7 +1467,7 @@ public interface OdeMessages extends Messages {
   // Used in explorer/commands/DeleteFileCommand.java
 
   @DefaultMessage("Do you really want to delete this file?  It will be removed from " +
-      "the Hybro Studio server.  Also, parts of your application may still refer to the deleted " +
+      "the App Inventor server.  Also, parts of your application may still refer to the deleted " +
       "file, and you will need to change these.")
   @Description("Confirmation message that will be shown before deleting a file")
   String reallyDeleteFile();
@@ -1579,7 +1586,7 @@ public interface OdeMessages extends Messages {
   String uploadKeystoreError();
 
   @DefaultMessage("Do you want to overwrite your keystore file?\n\n" +
-      "If you agree, your old keystore file will be completely removed from the Hybro Studio " +
+      "If you agree, your old keystore file will be completely removed from the App Inventor " +
       "server.\n\n" +
       "If you have published applications to the Google Play Store using the keystore you are " +
       "about to overwrite, you will lose the ability to update your applications.\n\n" +
@@ -1597,7 +1604,7 @@ public interface OdeMessages extends Messages {
   String deleteKeystoreError();
 
   @DefaultMessage("Do you really want to delete your keystore file?\n\n" +
-      "If you agree, your old keystore file will be completely removed from the Hybro Studio " +
+      "If you agree, your old keystore file will be completely removed from the App Inventor " +
       "server. A new, but different, keystore file will be created automatically the next time " +
       "you package a project for the phone.\n\n" +
       "If you have published applications to the Google Play Store using the keystore you are " +
@@ -1703,7 +1710,7 @@ public interface OdeMessages extends Messages {
   @Description("Error message when filenames are 0 or 101+ characters long")
   String filenameBadSize();
 
-  @DefaultMessage("Uploading {0} to the Hybro Studio server")
+  @DefaultMessage("Uploading {0} to the App Inventor server")
   @Description("Message displayed when an asset is uploaded.")
   String fileUploadingMessage(String filename);
 
@@ -1944,7 +1951,7 @@ public interface OdeMessages extends Messages {
   @Description("Title prefix for the gallery page sidebar that shows list of remixed apps.")
   String galleryAppsRemixesSidebar();
 
-  @DefaultMessage("Please explain why you feel this app is disrespectful or inappropriate, or otherwise breaks the <a href=\"http://google.com\">Hybro Studio Gallery Community Guidelines.</a> " +
+  @DefaultMessage("Please explain why you feel this app is disrespectful or inappropriate, or otherwise breaks the <a href=\"http://google.com\">App Inventor Gallery Community Guidelines.</a> " +
       "")
   @Description("Prompt for the gallery app report section.")
   String galleryReportPrompt();
@@ -2060,7 +2067,7 @@ public interface OdeMessages extends Messages {
   @Description("label of more info link")
   String labelMoreInfoLink();
 
-  @DefaultMessage("Hybro Studio will send you a notification "
+  @DefaultMessage("App Inventor will send you a notification "
       + "when the apps you have posted are liked or downloaded. "
       + "Below, you can enable/disable this feature and you can "
       + "specify how often you want to be notified")
@@ -2126,17 +2133,17 @@ public interface OdeMessages extends Messages {
 
   // Used in wizards/youngandroid/NewYoungAndroidProjectWizard.java
 
-  @DefaultMessage("NEW PROJECT")
+  @DefaultMessage("Create new App Inventor project")
   @Description("Caption for the wizard to create a new Young Android project")
   String newYoungAndroidProjectWizardCaption();
 
   // Used in wizards/youngandroid/RemixedYoungAndroidProjectWizard.java
 
-  @DefaultMessage("Name Project")
+  @DefaultMessage("Name this App Inventor project")
   @Description("Caption for the wizard to name the opening Young Android project")
   String remixedYoungAndroidProjectWizardCaption();
 
-  @DefaultMessage("PROJECT NAME:")
+  @DefaultMessage("Project name:")
   @Description("Label for the project name input text box")
   String projectNameLabel();
 
@@ -2166,7 +2173,7 @@ public interface OdeMessages extends Messages {
 
   // Used in youngandroid/YoungAndroidFormUpgrader.java
 
-  @DefaultMessage("This project was created with an older version of Hybro Studio or Other Distros " +
+  @DefaultMessage("This project was created with an older version of the App Inventor " +
       "system and was upgraded.\n{0}")
   @Description("Alert message displayed when a project is upgraded")
   String projectWasUpgraded(String details);
@@ -2175,12 +2182,12 @@ public interface OdeMessages extends Messages {
   @Description("Alert message displayed when upgrade fails")
   String unexpectedProblem(String details);
 
-  @DefaultMessage("This project was saved with a newer version of Hybro Studio or other distros. We " +
+  @DefaultMessage("This project was saved with a newer version of the App Inventor system. We " +
       "will attempt to load the project, but there may be compatibility issues.")
   @Description("Alert message displayed when project is newer than system")
   String newerVersionProject();
 
-  @DefaultMessage("This project was saved with an early pre-release version " +
+  @DefaultMessage("This project was saved with an early pre-release version of the App Inventor " +
       "system. We will attempt to load the project, but there may be compatibility issues.")
   @Description("Alert message displayed when upgrading a project without version numbers")
   String veryOldProject();
@@ -2224,7 +2231,7 @@ public interface OdeMessages extends Messages {
   @Description("Message to display at the start of an asset transfer before any assets are sent")
   String startingAssetTransfer();
 
-  @DefaultMessage("Downloading {0} from the Hybro Studio server...")
+  @DefaultMessage("Downloading {0} from the App Inventor server...")
   @Description("Message to display when an asset is being downloaded from the server")
   String loadingAsset(String assetPath);
 
@@ -2233,7 +2240,7 @@ public interface OdeMessages extends Messages {
   String sendingAssetToCompanion(String assetPath);
 
   // This error message is displayed as HTML
-  @DefaultMessage("Hybro Studio is unable to compile this project.  " +
+  @DefaultMessage("App Inventor is unable to compile this project.  " +
       "<br /> The compiler error output was <br /> {0}.")
   @Description("Compilation error, with error message.")
   String unableToCompile(String errorMesssage);
@@ -2262,19 +2269,19 @@ public interface OdeMessages extends Messages {
   @Description("")
   String generatingApplicationInformation();
 
-  @DefaultMessage("Loading Awesome ...")
+  @DefaultMessage("Compiling part 1")
   @Description("")
   String compilingPart1();
 
-  @DefaultMessage("Getting your App ready ...")
+  @DefaultMessage("Compiling part 2 (please wait)")
   @Description("")
   String compilingPart2();
 
-  @DefaultMessage("Preparing your App")
+  @DefaultMessage("Preparing final package")
   @Description("")
   String preparingFinalPackage();
 
-  @DefaultMessage("Building your App")
+  @DefaultMessage("Building APK")
   @Description("")
   String buildingApk();
 
@@ -2284,7 +2291,7 @@ public interface OdeMessages extends Messages {
 
   // This error message is displayed as HTML
 
-  @DefaultMessage("Interface")
+  @DefaultMessage("User Interface")
   @Description("")
   String userInterfaceComponentPallette();
 
@@ -2296,7 +2303,7 @@ public interface OdeMessages extends Messages {
   @Description("")
   String mediaComponentPallette();
 
-  @DefaultMessage("Animation")
+  @DefaultMessage("Drawing and Animation")
   @Description("")
   String drawingAndAnimationComponentPallette();
 
@@ -2336,7 +2343,7 @@ public interface OdeMessages extends Messages {
   @Description("")
   String legoMindstormsComponentPallette();
 
-  @DefaultMessage("Extensions")
+  @DefaultMessage("Extension")
   @Description("")
   String extensionComponentPallette();
 
@@ -2365,7 +2372,7 @@ public interface OdeMessages extends Messages {
   @Description("")
   String canvasComponentPallette();
 
-  @DefaultMessage("Check Box")
+  @DefaultMessage("CheckBox")
   @Description("")
   String checkBoxComponentPallette();
 
@@ -2373,7 +2380,7 @@ public interface OdeMessages extends Messages {
   @Description("")
   String clockComponentPallette();
 
-  @DefaultMessage("Date Picker")
+  @DefaultMessage("DatePicker")
   @Description("")
   String datePickerComponentPallette();
 
@@ -2385,15 +2392,15 @@ public interface OdeMessages extends Messages {
   @Description("")
   String labelComponentPallette();
 
-  @DefaultMessage("List Picker")
+  @DefaultMessage("ListPicker")
   @Description("")
   String listPickerComponentPallette();
 
-  @DefaultMessage("List View")
+  @DefaultMessage("ListView")
   @Description("")
   String listViewComponentPallette();
 
-  @DefaultMessage("Password TextField")
+  @DefaultMessage("PasswordTextBox")
   @Description("")
   String passwordTextBoxComponentPallette();
 
@@ -2409,15 +2416,15 @@ public interface OdeMessages extends Messages {
   @Description("")
   String spinnerComponentPallette();
 
-  @DefaultMessage("Text Field")
+  @DefaultMessage("TextBox")
   @Description("")
   String textBoxComponentPallette();
 
-  @DefaultMessage("Time Picker")
+  @DefaultMessage("TimePicker")
   @Description("")
   String timePickerComponentPallette();
 
-  @DefaultMessage("Local DB")
+  @DefaultMessage("TinyDB")
   @Description("")
   String tinyDBComponentPallette();
 
@@ -2430,7 +2437,7 @@ public interface OdeMessages extends Messages {
   @Description("")
   String cameraComponentPallette();
 
-  @DefaultMessage("Image Picker")
+  @DefaultMessage("ImagePicker")
   @Description("")
   String imagePickerComponentPallette();
 
@@ -2442,11 +2449,11 @@ public interface OdeMessages extends Messages {
   @Description("")
   String soundComponentPallette();
 
-  @DefaultMessage("Video Player")
+  @DefaultMessage("VideoPlayer")
   @Description("")
   String videoPlayerComponentPallette();
 
-  @DefaultMessage("Yandex Translate")
+  @DefaultMessage("YandexTranslate")
   @Description("")
   String yandexTranslateComponentPallette();
 
@@ -2455,28 +2462,28 @@ public interface OdeMessages extends Messages {
   @Description("")
   String ballComponentPallette();
 
-  @DefaultMessage("Sprite")
+  @DefaultMessage("ImageSprite")
   @Description("")
   String imageSpriteComponentPallette();
 
   // Social
-  @DefaultMessage("Contact Picker")
+  @DefaultMessage("ContactPicker")
   @Description("")
   String contactPickerComponentPallette();
 
-  @DefaultMessage("Email Picker")
+  @DefaultMessage("EmailPicker")
   @Description("")
   String emailPickerComponentPallette();
 
-  @DefaultMessage("Phone Call")
+  @DefaultMessage("PhoneCall")
   @Description("")
   String phoneCallComponentPallette();
 
-  @DefaultMessage("Phone No. Picker")
+  @DefaultMessage("PhoneNumberPicker")
   @Description("")
   String phoneNumberPickerComponentPallette();
 
-  @DefaultMessage("Phone Status")
+  @DefaultMessage("PhoneStatus")
   @Description("")
   String phoneStatusComponentPallette();
 
@@ -2493,52 +2500,52 @@ public interface OdeMessages extends Messages {
   String twitterComponentPallette();
 
   // Sensor
-  @DefaultMessage("Accelerometer Sensor")
+  @DefaultMessage("AccelerometerSensor")
   @Description("")
   String accelerometerSensorComponentPallette();
 
-  @DefaultMessage("QR Code Reader")
+  @DefaultMessage("BarcodeScanner")
   @Description("")
   String barcodeScannerComponentPallette();
 
-  @DefaultMessage("Gyroscope Sensor")
+  @DefaultMessage("GyroscopeSensor")
   @Description("")
   String gyroscopeSensorComponentPallette();
 
-  @DefaultMessage("Location Sensor")
+  @DefaultMessage("LocationSensor")
   @Description("")
   String locationSensorComponentPallette();
 
-  @DefaultMessage("Media Store")
+  @DefaultMessage("MediaStore")
   @Description("")
   String mediaStoreComponentPallette();
 
-  @DefaultMessage("Near Field")
+  @DefaultMessage("NearField")
   @Description("")
   String nearFieldComponentPallette();
 
-  @DefaultMessage("Orientation Sensor")
+  @DefaultMessage("OrientationSensor")
   @Description("")
   String orientationSensorComponentPallette();
 
   // Screen Arrangement
-  @DefaultMessage("Horizontal Layout")
+  @DefaultMessage("HorizontalArrangement")
   @Description("")
   String horizontalArrangementComponentPallette();
 
-  @DefaultMessage("HorizontalScroll Layout")
+  @DefaultMessage("HorizontalScrollArrangement")
   @Description("")
   String horizontalScrollArrangementComponentPallette();
 
-  @DefaultMessage("Table Layout")
+  @DefaultMessage("TableArrangement")
   @Description("")
   String tableArrangementComponentPallette();
 
-  @DefaultMessage("Vertical Layout")
+  @DefaultMessage("VerticalArrangement")
   @Description("")
   String verticalArrangementComponentPallette();
 
-  @DefaultMessage("VerticalScroll Layout")
+  @DefaultMessage("VerticalScrollArrangement")
   @Description("")
   String verticalScrollArrangementComponentPallette();
 
@@ -2605,31 +2612,31 @@ public interface OdeMessages extends Messages {
   String ev3UltrasonicSensorComponentPallette();
 
   // Storage
-  @DefaultMessage("Activity Starter")
+  @DefaultMessage("ActivityStarter")
   @Description("")
   String activityStarterComponentPallette();
 
-  @DefaultMessage("Bluetooth Client")
+  @DefaultMessage("BluetoothClient")
   @Description("")
   String bluetoothClientComponentPallette();
 
-  @DefaultMessage("Bluetooth Server")
+  @DefaultMessage("BluetoothServer")
   @Description("")
   String bluetoothServerComponentPallette();
 
-  @DefaultMessage("Dialogs")
+  @DefaultMessage("Notifier")
   @Description("")
   String notifierComponentPallette();
 
-  @DefaultMessage("Speech Recognizer")
+  @DefaultMessage("SpeechRecognizer")
   @Description("")
   String speechRecognizerComponentPallette();
 
-  @DefaultMessage("Text To Speech")
+  @DefaultMessage("TextToSpeech")
   @Description("")
   String textToSpeechComponentPallette();
 
-  @DefaultMessage("Tiny WebDB")
+  @DefaultMessage("TinyWebDB")
   @Description("")
   String tinyWebDBComponentPallette();
 
@@ -2642,15 +2649,15 @@ public interface OdeMessages extends Messages {
   @Description("")
   String fileComponentPallette();
 
-  @DefaultMessage("Firebase DB")
+  @DefaultMessage("FirebaseDB")
   @Description("")
   String firebaseDBComponentPallette();
 
-  @DefaultMessage("Fusiontables Control")
+  @DefaultMessage("FusiontablesControl")
   @Description("")
   String fusiontablesControlComponentPallette();
 
-  @DefaultMessage("Game Client")
+  @DefaultMessage("GameClient")
   @Description("")
   String gameClientComponentPallette();
 
@@ -2658,7 +2665,7 @@ public interface OdeMessages extends Messages {
   @Description("")
   String passwordParams();
 
-  @DefaultMessage("Sound Recorder")
+  @DefaultMessage("SoundRecorder")
   @Description("")
   String soundRecorderComponentPallette();
 
@@ -2666,20 +2673,20 @@ public interface OdeMessages extends Messages {
   @Description("")
   String votingComponentPallette();
 
-  @DefaultMessage("Web View")
+  @DefaultMessage("WebViewer")
   @Description("")
   String webViewerComponentPallette();
 
   // Component Properties
-  @DefaultMessage("About Screen Contents")
+  @DefaultMessage("AboutScreen")
   @Description("")
   String AboutScreenProperties();
 
-  @DefaultMessage("Show Status Bar")
+  @DefaultMessage("ShowStatusBar")
   @Description("")
   String ShowStatusBarProperties();
 
-  @DefaultMessage("Title Visible")
+  @DefaultMessage("TitleVisible")
   @Description("")
   String TitleVisibleProperties();
 
@@ -2691,31 +2698,31 @@ public interface OdeMessages extends Messages {
   @Description("")
   String ActionProperties();
 
-  @DefaultMessage("Activity Class")
+  @DefaultMessage("ActivityClass")
   @Description("")
   String ActivityClassProperties();
 
-  @DefaultMessage("Activity Package")
+  @DefaultMessage("ActivityPackage")
   @Description("")
   String ActivityPackageProperties();
 
-  @DefaultMessage("Align Horizontal")
+  @DefaultMessage("AlignHorizontal")
   @Description("")
   String AlignHorizontalProperties();
 
-  @DefaultMessage("Align Vertical")
+  @DefaultMessage("AlignVertical")
   @Description("")
   String AlignVerticalProperties();
 
-  @DefaultMessage("Allow Cookies")
+  @DefaultMessage("AllowCookies")
   @Description("")
   String AllowCookiesProperties();
 
-  @DefaultMessage("API Key")
+  @DefaultMessage("ApiKey")
   @Description("")
   String ApiKeyProperties();
 
-  @DefaultMessage("App Name")
+  @DefaultMessage("AppName")
   @Description("")
   String AppNameProperties();
 
@@ -2727,11 +2734,11 @@ public interface OdeMessages extends Messages {
   @Description("")
   String AvailableLanguagesProperties();
 
-  @DefaultMessage("Background Color")
+  @DefaultMessage("BackgroundColor")
   @Description("")
   String BackgroundColorProperties();
 
-  @DefaultMessage("Background Image")
+  @DefaultMessage("BackgroundImage")
   @Description("")
   String BackgroundImageProperties();
 
@@ -2759,11 +2766,11 @@ public interface OdeMessages extends Messages {
   @Description("")
   String CheckedProperties();
 
-  @DefaultMessage("Animation (Close Screen)")
+  @DefaultMessage("CloseScreenAnimation")
   @Description("")
   String CloseScreenAnimationProperties();
 
-  @DefaultMessage("Color Changed Event Enabled")
+  @DefaultMessage("ColorChangedEventEnabled")
   @Description("")
   String ColorChangedEventEnabledProperties();
 
@@ -2811,11 +2818,11 @@ public interface OdeMessages extends Messages {
   @Description("")
   String EnabledProperties();
 
-  @DefaultMessage("Extra Key")
+  @DefaultMessage("ExtraKey")
   @Description("")
   String ExtraKeyProperties();
 
-  @DefaultMessage("Extra Value")
+  @DefaultMessage("ExtraValue")
   @Description("")
   String ExtraValueProperties();
 
@@ -2823,23 +2830,23 @@ public interface OdeMessages extends Messages {
   @Description("")
   String ExtrasProperties();
 
-  @DefaultMessage("Follow Links")
+  @DefaultMessage("FollowLinks")
   @Description("")
   String FollowLinksProperties();
 
-  @DefaultMessage("Font Bold")
+  @DefaultMessage("FontBold")
   @Description("")
   String FontBoldProperties();
 
-  @DefaultMessage("Font Italic")
+  @DefaultMessage("FontItalic")
   @Description("")
   String FontItalicProperties();
 
-  @DefaultMessage("Font Size")
+  @DefaultMessage("FontSize")
   @Description("")
   String FontSizeProperties();
 
-  @DefaultMessage("Font Typeface")
+  @DefaultMessage("FontTypeface")
   @Description("")
   String FontTypefaceProperties();
 
@@ -2847,7 +2854,7 @@ public interface OdeMessages extends Messages {
   @Description("")
   String GameIdProperties();
 
-  @DefaultMessage("Generate Color")
+  @DefaultMessage("GenerateColor")
   @Description("")
   String GenerateColorProperties();
 
@@ -2855,11 +2862,11 @@ public interface OdeMessages extends Messages {
   @Description("")
   String GenerateLightProperties();
 
-  @DefaultMessage("Google Voice Enabled")
+  @DefaultMessage("GoogleVoiceEnabled")
   @Description("")
   String GoogleVoiceEnabledProperties();
 
-  @DefaultMessage("Has Margins")
+  @DefaultMessage("HasMargins")
   @Description("")
   String HasMarginsProperties();
 
@@ -2875,7 +2882,7 @@ public interface OdeMessages extends Messages {
   @Description("")
   String HintProperties();
 
-  @DefaultMessage("Home Url")
+  @DefaultMessage("HomeUrl")
   @Description("")
   String HomeUrlProperties();
 
@@ -2915,7 +2922,7 @@ public interface OdeMessages extends Messages {
   @Description("")
   String LineWidthProperties();
 
-  @DefaultMessage("Loading Dialog Message")
+  @DefaultMessage("LoadingDialogMessage")
   @Description("")
   String LoadingDialogMessageProperties();
 
@@ -2939,23 +2946,23 @@ public interface OdeMessages extends Messages {
   @Description("")
   String NumbersOnlyProperties();
 
-  @DefaultMessage("Animation (Open Screen)")
+  @DefaultMessage("OpenScreenAnimation")
   @Description("")
   String OpenScreenAnimationProperties();
 
-  @DefaultMessage("Paint Color")
+  @DefaultMessage("PaintColor")
   @Description("")
   String PaintColorProperties();
 
-  @DefaultMessage("Phone Number")
+  @DefaultMessage("PhoneNumber")
   @Description("")
   String PhoneNumberProperties();
 
-  @DefaultMessage("Phone Number")
+  @DefaultMessage("PhoneNumber")
   @Description("")
   String phoneNumberParams();
 
-  @DefaultMessage("Phone Number List")
+  @DefaultMessage("PhoneNumberList")
   @Description("")
   String PhoneNumberListProperties();
 
@@ -2967,7 +2974,7 @@ public interface OdeMessages extends Messages {
   @Description("")
   String PressedEventEnabledProperties();
 
-  @DefaultMessage("Prompt for Permission")
+  @DefaultMessage("PromptforPermission")
   @Description("")
   String PromptforPermissionProperties();
 
@@ -2979,23 +2986,23 @@ public interface OdeMessages extends Messages {
   @Description("")
   String RadiusProperties();
 
-  @DefaultMessage("Read Mode")
+  @DefaultMessage("ReadMode")
   @Description("")
   String ReadModeProperties();
 
-  @DefaultMessage("Receiving Enabled")
+  @DefaultMessage("ReceivingEnabled")
   @Description("")
   String ReceivingEnabledProperties();
 
-  @DefaultMessage("Released Event Enabled")
+  @DefaultMessage("ReleasedEventEnabled")
   @Description("")
   String ReleasedEventEnabledProperties();
 
-  @DefaultMessage("Response File Name")
+  @DefaultMessage("ResponseFileName")
   @Description("")
   String ResponseFileNameProperties();
 
-  @DefaultMessage("Result Name")
+  @DefaultMessage("ResultName")
   @Description("")
   String ResultNameProperties();
 
@@ -3003,23 +3010,23 @@ public interface OdeMessages extends Messages {
   @Description("")
   String RowsProperties();
 
-  @DefaultMessage("Saved Recording")
+  @DefaultMessage("SavedRecording")
   @Description("")
   String SavedRecordingProperties();
 
-  @DefaultMessage("Save Response")
+  @DefaultMessage("SaveResponse")
   @Description("")
   String SaveResponseProperties();
 
-  @DefaultMessage("Scale Picture To Fit")
+  @DefaultMessage("ScalePictureToFit")
   @Description("")
   String ScalePictureToFitProperties();
 
-  @DefaultMessage("Sensor Port")
+  @DefaultMessage("SensorPort")
   @Description("")
   String SensorPortProperties();
 
-  @DefaultMessage("Screen Orientation")
+  @DefaultMessage("ScreenOrientation")
   @Description("")
   String ScreenOrientationProperties();
 
@@ -3039,7 +3046,7 @@ public interface OdeMessages extends Messages {
   @Description("")
   String ShowLoadingDialogProperties();
 
-  @DefaultMessage("Firebase URL")
+  @DefaultMessage("FirebaseURL")
   @Description("")
   String FirebaseURLProperties();
 
@@ -3047,15 +3054,15 @@ public interface OdeMessages extends Messages {
   @Description("")
   String PersistProperties();
 
-  @DefaultMessage("Project Bucket")
+  @DefaultMessage("ProjectBucket")
   @Description("")
   String ProjectBucketProperties();
 
-  @DefaultMessage("Developer Bucket")
+  @DefaultMessage("DeveloperBucket")
   @Description("")
   String DeveloperBucketProperties();
 
-  @DefaultMessage("Firebase Token")
+  @DefaultMessage("FirebaseToken")
   @Description("")
   String FirebaseTokenProperties();
 
@@ -3071,7 +3078,7 @@ public interface OdeMessages extends Messages {
   @Description("")
   String ShapeProperties();
 
-  @DefaultMessage("Show Feedback")
+  @DefaultMessage("ShowFeedback")
   @Description("")
   String ShowFeedbackProperties();
 
@@ -3103,23 +3110,23 @@ public interface OdeMessages extends Messages {
   @Description("")
   String TextProperties();
 
-  @DefaultMessage("Text Alignment")
+  @DefaultMessage("TextAlignment")
   @Description("")
   String TextAlignmentProperties();
 
-  @DefaultMessage("Text Color")
+  @DefaultMessage("TextColor")
   @Description("")
   String TextColorProperties();
 
-  @DefaultMessage("Timer Always Fires")
+  @DefaultMessage("TimerAlwaysFires")
   @Description("")
   String TimerAlwaysFiresProperties();
 
-  @DefaultMessage("Timer Enabled")
+  @DefaultMessage("TimerEnabled")
   @Description("")
   String TimerEnabledProperties();
 
-  @DefaultMessage("Timer Interval")
+  @DefaultMessage("TimerInterval")
   @Description("")
   String TimerIntervalProperties();
 
@@ -3127,7 +3134,7 @@ public interface OdeMessages extends Messages {
   @Description("")
   String TitleProperties();
 
-  @DefaultMessage("Top Of Range")
+  @DefaultMessage("TopOfRange")
   @Description("")
   String TopOfRangeProperties();
 
@@ -3135,11 +3142,11 @@ public interface OdeMessages extends Messages {
   @Description("")
   String UrlProperties();
 
-  @DefaultMessage("Use Front")
+  @DefaultMessage("UseFront")
   @Description("")
   String UseFrontProperties();
 
-  @DefaultMessage("Use GPS")
+  @DefaultMessage("UseGPS")
   @Description("")
   String UseGPSProperties();
 
@@ -3151,15 +3158,15 @@ public interface OdeMessages extends Messages {
   @Description("")
   String UsesLocationVisibleProperties();
 
-  @DefaultMessage("Version Code")
+  @DefaultMessage("VersionCode")
   @Description("")
   String VersionCodeProperties();
 
-  @DefaultMessage("Version Name")
+  @DefaultMessage("VersionName")
   @Description("")
   String VersionNameProperties();
 
-  @DefaultMessage("Tutorial/App Site")
+  @DefaultMessage("TutorialURL")
   @Description("")
   String TutorialURLProperties();
 
@@ -3231,15 +3238,15 @@ public interface OdeMessages extends Messages {
   @Description("")
   String UsesLocationProperties();
 
-  @DefaultMessage("Show Filter Bar")
+  @DefaultMessage("ShowFilterBar")
   @Description("")
   String ShowFilterBarProperties();
 
-  @DefaultMessage("Text Size")
+  @DefaultMessage("TextSize")
   @Description("")
   String TextSizeProperties();
 
-  @DefaultMessage("Dialog Length")
+  @DefaultMessage("NotifierLength")
   @Description("")
   String NotifierLengthProperties();
 
@@ -3267,27 +3274,27 @@ public interface OdeMessages extends Messages {
   @Description("")
   String PromptProperties();
 
-  @DefaultMessage("Color Left")
+  @DefaultMessage("ColorLeft")
   @Description("")
   String ColorLeftProperties();
 
-  @DefaultMessage("Color Right")
+  @DefaultMessage("ColorRight")
   @Description("")
   String ColorRightProperties();
 
-  @DefaultMessage("Max Value")
+  @DefaultMessage("MaxValue")
   @Description("")
   String MaxValueProperties();
 
-  @DefaultMessage("Min Value")
+  @DefaultMessage("MinValue")
   @Description("")
   String MinValueProperties();
 
-  @DefaultMessage("Thumb Position")
+  @DefaultMessage("ThumbPosition")
   @Description("")
   String ThumbPositionProperties();
 
-  @DefaultMessage("Thumb Enabled")
+  @DefaultMessage("ThumbEnabled")
   @Description("")
   String ThumbEnabled();
 
@@ -3299,7 +3306,7 @@ public interface OdeMessages extends Messages {
   @Description("")
   String MonthProperties();
 
-  @DefaultMessage("Month In Text")
+  @DefaultMessage("MonthInText")
   @Description("")
   String MonthInTextProperties();
 
@@ -3307,27 +3314,27 @@ public interface OdeMessages extends Messages {
   @Description("")
   String YearProperties();
 
-  @DefaultMessage("Last Message")
+  @DefaultMessage("LastMessage")
   @Description("")
   String LastMessageProperties();
 
-  @DefaultMessage("Text To Write")
+  @DefaultMessage("TextToWrite")
   @Description("")
   String TextToWriteProperties();
 
-  @DefaultMessage("Write Type")
+  @DefaultMessage("WriteType")
   @Description("")
   String WriteTypeProperties();
 
-  @DefaultMessage("Elapsed Time")
+  @DefaultMessage("ElapsedTime")
   @Description("")
   String ElapsedTimeProperties();
 
-  @DefaultMessage("Simple Steps")
+  @DefaultMessage("SimpleSteps")
   @Description("")
   String SimpleStepsProperties();
 
-  @DefaultMessage("Walk Steps")
+  @DefaultMessage("WalkSteps")
   @Description("")
   String WalkStepsProperties();
 
@@ -3411,11 +3418,11 @@ public interface OdeMessages extends Messages {
   @Description("")
   String ContactUriProperties();
 
-  @DefaultMessage("Email Address")
+  @DefaultMessage("EmailAddress")
   @Description("")
   String EmailAddressProperties();
 
-  @DefaultMessage("Email Address List")
+  @DefaultMessage("EmailAddressList")
   @Description("")
   String EmailAddressListProperties();
 
@@ -3431,7 +3438,7 @@ public interface OdeMessages extends Messages {
   @Description("")
   String FriendTimelineProperties();
 
-  @DefaultMessage("Full Screen")
+  @DefaultMessage("FullScreen")
   @Description("")
   String FullScreenProperties();
 
@@ -3451,7 +3458,7 @@ public interface OdeMessages extends Messages {
   @Description("")
   String HeightProperties();
 
-  @DefaultMessage("Height Percent")
+  @DefaultMessage("HeightPercent")
   @Description("")
   String HeightPercentProperties();
 
@@ -3531,7 +3538,7 @@ public interface OdeMessages extends Messages {
   @Description("")
   String ResultProperties();
 
-  @DefaultMessage("External QR Code Reader")
+  @DefaultMessage("UseExternalScanner")
   @Description("")
   String UseExternalScannerProperties();
 
@@ -3615,7 +3622,7 @@ public interface OdeMessages extends Messages {
   @Description("")
   String WidthProperties();
 
-  @DefaultMessage("Width Percent")
+  @DefaultMessage("WidthPercent")
   @Description("")
   String WidthPercentProperties();
 
@@ -3840,7 +3847,7 @@ public interface OdeMessages extends Messages {
   @Description("")
   String angleParams();
 
-  @DefaultMessage("File Name")
+  @DefaultMessage("fileName")
   @Description("")
   String fileNameParams();
 
@@ -3927,6 +3934,10 @@ public interface OdeMessages extends Messages {
   @DefaultMessage("functionName")
   @Description("")
   String functionNameParams();
+
+  @DefaultMessage("permissionName")
+  @Description("The name of the parameter that is used to report the name of a needed permission.")
+  String permissionNameParams();
 
   @DefaultMessage("errorNumber")
   @Description("")
@@ -4151,6 +4162,10 @@ public interface OdeMessages extends Messages {
   @DefaultMessage("seed")
   @Description("")
   String seedParams();
+
+  @DefaultMessage("rendezvousServer")
+  @Description("")
+  String rendezvousServerParams();
 
   @DefaultMessage("millisecs")
   @Description("")
@@ -4429,11 +4444,11 @@ public interface OdeMessages extends Messages {
   @Description("")
   String TouchedEvents();
 
-  @DefaultMessage("After Scan")
+  @DefaultMessage("AfterScan")
   @Description("")
   String AfterScanEvents();
 
-  @DefaultMessage("Connection Accepted")
+  @DefaultMessage("ConnectionAccepted")
   @Description("")
   String ConnectionAcceptedEvents();
 
@@ -4441,31 +4456,31 @@ public interface OdeMessages extends Messages {
   @Description("")
   String ClickEvents();
 
-  @DefaultMessage("Got Focus")
+  @DefaultMessage("GotFocus")
   @Description("")
   String GotFocusEvents();
 
-  @DefaultMessage("Long Click")
+  @DefaultMessage("LongClick")
   @Description("")
   String LongClickEvents();
 
-  @DefaultMessage("Request Focus")
+  @DefaultMessage("RequestFocus")
   @Description("")
   String RequestFocusMethods();
 
-  @DefaultMessage("Lost Focus")
+  @DefaultMessage("LostFocus")
   @Description("")
   String LostFocusEvents();
 
-  @DefaultMessage("View Contact")
+  @DefaultMessage("ViewContact")
   @Description("")
   String ViewContactMethods();
 
-  @DefaultMessage("After Recording")
+  @DefaultMessage("AfterRecording")
   @Description("")
   String AfterRecordingEvents();
 
-  @DefaultMessage("After Picture")
+  @DefaultMessage("AfterPicture")
   @Description("")
   String AfterPictureEvents();
 
@@ -4477,19 +4492,19 @@ public interface OdeMessages extends Messages {
   @Description("")
   String TimerEvents();
 
-  @DefaultMessage("After Picking")
+  @DefaultMessage("AfterPicking")
   @Description("")
   String AfterPickingEvents();
 
-  @DefaultMessage("Before Picking")
+  @DefaultMessage("BeforePicking")
   @Description("")
   String BeforePickingEvents();
 
-  @DefaultMessage("Back Pressed")
+  @DefaultMessage("BackPressed")
   @Description("")
   String BackPressedEvents();
 
-  @DefaultMessage("Error Occurred")
+  @DefaultMessage("ErrorOccurred")
   @Description("")
   String ErrorOccurredEvents();
 
@@ -4497,15 +4512,23 @@ public interface OdeMessages extends Messages {
   @Description("")
   String InitializeEvents();
 
-  @DefaultMessage("Other Screen Closed")
+  @DefaultMessage("OtherScreenClosed")
   @Description("")
   String OtherScreenClosedEvents();
 
-  @DefaultMessage("Screen Orientation Changed")
+  @DefaultMessage("PermissionDenied")
+  @Description("The name of the event handler for when the app is denied a dangerous permission by the user.")
+  String PermissionDeniedEvents();
+
+  @DefaultMessage("PermissionGranted")
+  @Description("The name of the event handler for when the app is granted a dangerous permission by the user.")
+  String PermissionGrantedEvents();
+
+  @DefaultMessage("ScreenOrientationChanged")
   @Description("")
   String ScreenOrientationChangedEvents();
 
-  @DefaultMessage("Got Result")
+  @DefaultMessage("GotResult")
   @Description("")
   String GotResultEvents();
 
@@ -4573,19 +4596,19 @@ public interface OdeMessages extends Messages {
   @Description("")
   String StatusChangedEvents();
 
-  @DefaultMessage("After Choosing")
+  @DefaultMessage("AfterChoosing")
   @Description("")
   String AfterChoosingEvents();
 
-  @DefaultMessage("After Text Input")
+  @DefaultMessage("AfterTextInput")
   @Description("")
   String AfterTextInputEvents();
 
-  @DefaultMessage("Choosing Canceled")
+  @DefaultMessage("ChoosingCanceled")
   @Description("")
   String ChoosingCanceledEvents();
 
-  @DefaultMessage("Text Input Canceled")
+  @DefaultMessage("TextInputCanceled")
   @Description("")
   String TextInputCanceledEvents();
 
@@ -4613,7 +4636,7 @@ public interface OdeMessages extends Messages {
   @Description("")
   String ReleasedEvents();
 
-  @DefaultMessage("Orientation Changed")
+  @DefaultMessage("OrientationChanged")
   @Description("")
   String OrientationChangedEvents();
 
@@ -4633,15 +4656,15 @@ public interface OdeMessages extends Messages {
   @Description("")
   String SimpleStepEvents();
 
-  @DefaultMessage("Started Moving")
+  @DefaultMessage("StartedMoving")
   @Description("")
   String StartedMovingEvents();
 
-  @DefaultMessage("Stopped Moving")
+  @DefaultMessage("StoppedMoving")
   @Description("")
   String StoppedMovingEvents();
 
-  @DefaultMessage("Walk Step")
+  @DefaultMessage("WalkStep")
   @Description("")
   String WalkStepEvents();
 
@@ -4649,43 +4672,43 @@ public interface OdeMessages extends Messages {
   @Description("")
   String CompletedEvents();
 
-  @DefaultMessage("After Sound Recorded")
+  @DefaultMessage("AfterSoundRecorded")
   @Description("")
   String AfterSoundRecordedEvents();
 
-  @DefaultMessage("Started Recording")
+  @DefaultMessage("StartedRecording")
   @Description("")
   String StartedRecordingEvents();
 
-  @DefaultMessage("Stopped Recording")
+  @DefaultMessage("StoppedRecording")
   @Description("")
   String StoppedRecordingEvents();
 
-  @DefaultMessage("After Getting Text")
+  @DefaultMessage("AfterGettingText")
   @Description("")
   String AfterGettingTextEvents();
 
-  @DefaultMessage("Before Getting Text")
+  @DefaultMessage("BeforeGettingText")
   @Description("")
   String BeforeGettingTextEvents();
 
-  @DefaultMessage("After Speaking")
+  @DefaultMessage("AfterSpeaking")
   @Description("")
   String AfterSpeakingEvents();
 
-  @DefaultMessage("Before Speaking")
+  @DefaultMessage("BeforeSpeaking")
   @Description("")
   String BeforeSpeakingEvents();
 
-  @DefaultMessage("Message Received")
+  @DefaultMessage("MessageReceived")
   @Description("")
   String MessageReceivedEvents();
 
-  @DefaultMessage("Send Message")
+  @DefaultMessage("SendMessage")
   @Description("")
   String SendMessageEvents();
 
-  @DefaultMessage("Got Value")
+  @DefaultMessage("GotValue")
   @Description("")
   String GotValueEvents();
 
@@ -4890,11 +4913,11 @@ public interface OdeMessages extends Messages {
   @Description("")
   String StopAcceptingMethods();
 
-  @DefaultMessage("Record Video")
+  @DefaultMessage("RecordVideo")
   @Description("")
   String RecordVideoMethods();
 
-  @DefaultMessage("Take Picture")
+  @DefaultMessage("TakePicture")
   @Description("")
   String TakePictureMethods();
 
@@ -4902,31 +4925,31 @@ public interface OdeMessages extends Messages {
   @Description("")
   String ClearMethods();
 
-  @DefaultMessage("Draw Circle")
+  @DefaultMessage("DrawCircle")
   @Description("")
   String DrawCircleMethods();
 
-  @DefaultMessage("Draw Line")
+  @DefaultMessage("DrawLine")
   @Description("")
   String DrawLineMethods();
 
-  @DefaultMessage("Draw Point")
+  @DefaultMessage("DrawPoint")
   @Description("")
   String DrawPointMethods();
 
-  @DefaultMessage("Draw Text")
+  @DefaultMessage("DrawText")
   @Description("")
   String DrawTextMethods();
 
-  @DefaultMessage("Draw Text At Angle")
+  @DefaultMessage("DrawTextAtAngle")
   @Description("")
   String DrawTextAtAngleMethods();
 
-  @DefaultMessage("Get Background Pixel Color")
+  @DefaultMessage("GetBackgroundPixelColor")
   @Description("")
   String GetBackgroundPixelColorMethods();
 
-  @DefaultMessage("Get Pixel Color")
+  @DefaultMessage("GetPixelColor")
   @Description("")
   String GetPixelColorMethods();
 
@@ -4934,47 +4957,47 @@ public interface OdeMessages extends Messages {
   @Description("")
   String SaveMethods();
 
-  @DefaultMessage("Save As")
+  @DefaultMessage("SaveAs")
   @Description("")
   String SaveAsMethods();
 
-  @DefaultMessage("Set Background Pixel Color")
+  @DefaultMessage("SetBackgroundPixelColor")
   @Description("")
   String SetBackgroundPixelColorMethods();
 
-  @DefaultMessage("Add Duration")
+  @DefaultMessage("AddDuration")
   @Description("")
   String AddDurationMethods();
 
-  @DefaultMessage("Add Days")
+  @DefaultMessage("AddDays")
   @Description("")
   String AddDaysMethods();
 
-  @DefaultMessage("Add Hours")
+  @DefaultMessage("AddHours")
   @Description("")
   String AddHoursMethods();
 
-  @DefaultMessage("Add Minutes")
+  @DefaultMessage("AddMinutes")
   @Description("")
   String AddMinutesMethods();
 
-  @DefaultMessage("Add Months")
+  @DefaultMessage("AddMonths")
   @Description("")
   String AddMonthsMethods();
 
-  @DefaultMessage("Add Seconds")
+  @DefaultMessage("AddSeconds")
   @Description("")
   String AddSecondsMethods();
 
-  @DefaultMessage("Add Weeks")
+  @DefaultMessage("AddWeeks")
   @Description("")
   String AddWeeksMethods();
 
-  @DefaultMessage("Add Years")
+  @DefaultMessage("AddYears")
   @Description("")
   String AddYearsMethods();
 
-  @DefaultMessage("Day Of Month")
+  @DefaultMessage("DayOfMonth")
   @Description("")
   String DayOfMonthMethods();
 
@@ -4982,39 +5005,39 @@ public interface OdeMessages extends Messages {
   @Description("")
   String DurationMethods();
 
-  @DefaultMessage("Duration To Seconds")
+  @DefaultMessage("DurationToSeconds")
   @Description("")
   String DurationToSecondsMethods();
 
-  @DefaultMessage("Duration To Minutes")
+  @DefaultMessage("DurationToMinutes")
   @Description("")
   String DurationToMinutesMethods();
 
-  @DefaultMessage("Duration To Hours")
+  @DefaultMessage("DurationToHours")
   @Description("")
   String DurationToHoursMethods();
 
-  @DefaultMessage("Duration To Days")
+  @DefaultMessage("DurationToDays")
   @Description("")
   String DurationToDaysMethods();
 
-  @DefaultMessage("Duration To Weeks")
+  @DefaultMessage("DurationToWeeks")
   @Description("")
   String DurationToWeeksMethods();
 
-  @DefaultMessage("Format Date")
+  @DefaultMessage("FormatDate")
   @Description("")
   String FormatDateMethods();
 
-  @DefaultMessage("Format Date Time")
+  @DefaultMessage("FormatDateTime")
   @Description("")
   String FormatDateTimeMethods();
 
-  @DefaultMessage("Format Time")
+  @DefaultMessage("FormatTime")
   @Description("")
   String FormatTimeMethods();
 
-  @DefaultMessage("Get Millis")
+  @DefaultMessage("GetMillis")
   @Description("")
   String GetMillisMethods();
 
@@ -5026,7 +5049,7 @@ public interface OdeMessages extends Messages {
   @Description("")
   String InstantMethods();
 
-  @DefaultMessage("Make Instant")
+  @DefaultMessage("MakeInstant")
   @Description("")
   String MakeInstantMethods();
 
@@ -5042,7 +5065,7 @@ public interface OdeMessages extends Messages {
   @Description("")
   String MonthMethods();
 
-  @DefaultMessage("Month Name")
+  @DefaultMessage("MonthName")
   @Description("")
   String MonthNameMethods();
 
@@ -5054,7 +5077,7 @@ public interface OdeMessages extends Messages {
   @Description("")
   String SecondMethods();
 
-  @DefaultMessage("System Time")
+  @DefaultMessage("SystemTime")
   @Description("")
   String SystemTimeMethods();
 
@@ -5062,7 +5085,7 @@ public interface OdeMessages extends Messages {
   @Description("")
   String WeekdayMethods();
 
-  @DefaultMessage("Weekday Name")
+  @DefaultMessage("WeekdayName")
   @Description("")
   String WeekdayNameMethods();
 
@@ -5074,11 +5097,11 @@ public interface OdeMessages extends Messages {
   @Description("")
   String OpenMethods();
 
-  @DefaultMessage("Animation (Close Screen)")
+  @DefaultMessage("CloseScreenAnimation")
   @Description("")
   String CloseScreenAnimationMethods();
 
-  @DefaultMessage("Animation (Open Screen)")
+  @DefaultMessage("OpenScreenAnimation")
   @Description("")
   String OpenScreenAnimationMethods();
 
@@ -5170,47 +5193,47 @@ public interface OdeMessages extends Messages {
   @Description("")
   String LogWarningMethods();
 
-  @DefaultMessage("Show Alert")
+  @DefaultMessage("ShowAlert")
   @Description("")
   String ShowAlertMethods();
 
-  @DefaultMessage("Show Choose Dialog")
+  @DefaultMessage("ShowChooseDialog")
   @Description("")
   String ShowChooseDialogMethods();
 
-  @DefaultMessage("Show Message Dialog")
+  @DefaultMessage("ShowMessageDialog")
   @Description("")
   String ShowMessageDialogMethods();
 
-  @DefaultMessage("Show Text Dialog")
+  @DefaultMessage("ShowTextDialog")
   @Description("")
   String ShowTextDialogMethods();
 
-  @DefaultMessage("Show Progress Dialog")
+  @DefaultMessage("ShowProgressDialog")
   @Description("")
   String ShowProgressDialogMethods();
 
-  @DefaultMessage("Dismiss Progress Dialog")
+  @DefaultMessage("DismissProgressDialog")
   @Description("")
   String DismissProgressDialogMethods();
 
-  @DefaultMessage("Get Color")
+  @DefaultMessage("GetColor")
   @Description("")
   String GetColorMethods();
 
-  @DefaultMessage("Get Light Level")
+  @DefaultMessage("GetLightLevel")
   @Description("")
   String GetLightLevelMethods();
 
-  @DefaultMessage("Delete File")
+  @DefaultMessage("DeleteFile")
   @Description("")
   String DeleteFileMethods();
 
-  @DefaultMessage("Download File")
+  @DefaultMessage("DownloadFile")
   @Description("")
   String DownloadFileMethods();
 
-  @DefaultMessage("Get Battery Level")
+  @DefaultMessage("GetBatteryLevel")
   @Description("")
   String GetBatteryLevelMethods();
 
@@ -5222,7 +5245,7 @@ public interface OdeMessages extends Messages {
   @Description("")
   String GetCurrentProgramNameMethods();
 
-  @DefaultMessage("Get Firmware Version")
+  @DefaultMessage("GetFirmwareVersion")
   @Description("")
   String GetFirmwareVersionMethods();
 
@@ -5390,31 +5413,35 @@ public interface OdeMessages extends Messages {
   @Description("")
   String HideKeyboardMethods();
 
+  @DefaultMessage("AskForPermission")
+  @Description("")
+  String AskForPermissionMethods();
+
   @DefaultMessage("Speak")
   @Description("")
   String SpeakMethods();
 
-  @DefaultMessage("Send Message")
+  @DefaultMessage("SendMessage")
   @Description("")
   String SendMessageMethods();
 
-  @DefaultMessage("Get Value")
+  @DefaultMessage("GetValue")
   @Description("")
   String GetValueMethods();
 
-  @DefaultMessage("Store Value")
+  @DefaultMessage("StoreValue")
   @Description("")
   String StoreValueMethods();
 
-  @DefaultMessage("Get Tag List")
+  @DefaultMessage("GetTagList")
   @Description("")
   String GetTagListMethods();
 
-  @DefaultMessage("Append Value")
+  @DefaultMessage("AppendValue")
   @Description("")
   String AppendValueMethods();
 
-  @DefaultMessage("Remove First")
+  @DefaultMessage("RemoveFirst")
   @Description("")
   String RemoveFirstMethods();
 
@@ -5490,7 +5517,7 @@ public interface OdeMessages extends Messages {
   @Description("")
   String SeekToMethods();
 
-  @DefaultMessage("Do Scan")
+  @DefaultMessage("DoScan")
   @Description("")
   String DoScanMethods();
 
@@ -5506,7 +5533,7 @@ public interface OdeMessages extends Messages {
   @Description("")
   String BuildPostDataMethods();
 
-  @DefaultMessage("Clear Cookies")
+  @DefaultMessage("ClearCookies")
   @Description("")
   String ClearCookiesMethods();
 
@@ -5541,7 +5568,7 @@ public interface OdeMessages extends Messages {
   @DefaultMessage("UriEncode")
   @Description("")
   String UriEncodeMethods();
-
+  
   @DefaultMessage("UriDecode")
   @Description("")
   String UriDecodeMethods();
@@ -5590,7 +5617,7 @@ public interface OdeMessages extends Messages {
   @Description("")
   String ReadFromMethods();
 
-  @DefaultMessage("Save File")
+  @DefaultMessage("SaveFile")
   @Description("")
   String SaveFileMethods();
 
@@ -5774,7 +5801,7 @@ public interface OdeMessages extends Messages {
   @Description("")
   String GetColorNameMethods();
 
-  @DefaultMessage("Fill Screen")
+  @DefaultMessage("FillScreen")
   @Description("")
   String FillScreenMethods();
 
@@ -5786,23 +5813,23 @@ public interface OdeMessages extends Messages {
   @Description("")
   String DrawIconMethods();
 
-  @DefaultMessage("Get OS Version")
+  @DefaultMessage("GetOSVersion")
   @Description("")
   String GetOSVersionMethods();
 
-  @DefaultMessage("Get OS Build")
+  @DefaultMessage("GetOSBuild")
   @Description("")
   String GetOSBuildMethods();
 
-  @DefaultMessage("Get Firmware Build")
+  @DefaultMessage("GetFirmwareBuild")
   @Description("")
   String GetFirmwareBuildMethods();
 
-  @DefaultMessage("Set Power")
+  @DefaultMessage("SetPower")
   @Description("")
   String SetPowerMethods();
 
-  @DefaultMessage("Stop Sound")
+  @DefaultMessage("StopSound")
   @Description("")
   String StopSoundMethods();
 
@@ -5816,7 +5843,7 @@ public interface OdeMessages extends Messages {
   @Description("")
   String AccelerometerSensorHelpStringComponentPallette();
 
-  @DefaultMessage("A component that can launch an activity using the <code>StartActivity</code> method.<p>Activities that can be launched include: <ul> \n<li> starting other Hybro Studio for Android apps </li> \n<li> starting the camera application </li> \n<li> performing web search </li> \n<li> opening a browser to a specified web page</li> \n<li> opening the map application to a specified location</li></ul> \nYou can also launch activities that return text data.  See the documentation on using the Activity Starter for examples.</p>")
+  @DefaultMessage("A component that can launch an activity using the <code>StartActivity</code> method.<p>Activities that can be launched include: <ul> \n<li> starting other App Inventor for Android apps </li> \n<li> starting the camera application </li> \n<li> performing web search </li> \n<li> opening a browser to a specified web page</li> \n<li> opening the map application to a specified location</li></ul> \nYou can also launch activities that return text data.  See the documentation on using the Activity Starter for examples.</p>")
   @Description("")
   String ActivityStarterHelpStringComponentPallette();
 
@@ -5923,7 +5950,7 @@ public interface OdeMessages extends Messages {
   @Description("")
   String FormHelpStringComponentPallette();
 
-  @DefaultMessage("<p>A non-visible component that communicates with Google Fusion Tables.  Fusion Tables let you store, share, query and visualize data tables; this component lets you query, create, and modify these tables.</p> <p>This component uses the <a href=\"https://developers.google.com/fusiontables/docs/v2/getting_started\" target=\"_blank\">Fusion Tables API V2.0</a>.  <p>Applications using Fusion Tables must authentication to Google\"s servers. There are two ways this can be done. The first way uses an API Key which you the developer obtain (see below). With this approach end-users must also login to access a Fusion Table.  The second approach is to use a Service Account. With this approach you create credentials and a special \"Service Account Email Address\" which you obtain from the <a href=\"https://code.google.com/apis/console/\" target=\"_blank\">Google APIs Console</a>.  You then tell the Fusion Table Control the name of the Service Account Email address and upload the secret key as an asset to your application and set the KeyFile property to point at this file. Finally you check the \"UseServiceAuthentication\" checkbox in the designer.  When using a Service Account, end-users do not need to login to use Fusion Tables, your service account authenticates all access.</p> <p>To get an API key, follow these instructions.</p> <ol> <li>Go to your <a href=\"https://code.google.com/apis/console/\" target=\"_blank\">Google APIs Console</a> and login if necessary.</li> <li>Select the <i>Services</i> item from the menu on the left.</li> <li>Choose the <i>Fusiontables</i> service from the list provided and turn it on.</li> <li>Go back to the main menu and select the <i>API Access</i> item. </li> </ol> <p>Your API Key will be near the bottom of that pane in the section called \"Simple API Access\".  You will have to provide that key as the value for the <i>ApiKey</i> property in your Fusiontables app.</p> <p>Once you have an API key, set the value of the <i>Query</i> property to a valid Fusiontables SQL query and call <i>SendQuery</i> to execute the query.  Hybro Studio will send the query to the Fusion Tables server and the <i>GotResult</i> block will fire when a result is returned from the server.  Query results will be returned in CSV format, and can be converted to list format using the \"list from csv table\" or \"list from csv row\" blocks.</p> <p>Note that you do not need to worry about UTF-encoding the query.  But you do need to make sure the query follows the syntax described in <a href=\"https://developers.google.com/fusiontables/docs/v2/getting_started\" target=\"_blank\">the reference manual</a>, which means that things like capitalization for names of columns matters, and that single quotes must be used around column names if there are spaces in them.</p>")
+  @DefaultMessage("<p>A non-visible component that communicates with Google Fusion Tables.  Fusion Tables let you store, share, query and visualize data tables; this component lets you query, create, and modify these tables.</p> <p>This component uses the <a href=\"https://developers.google.com/fusiontables/docs/v2/getting_started\" target=\"_blank\">Fusion Tables API V2.0</a>.  <p>Applications using Fusion Tables must authentication to Google\"s servers. There are two ways this can be done. The first way uses an API Key which you the developer obtain (see below). With this approach end-users must also login to access a Fusion Table.  The second approach is to use a Service Account. With this approach you create credentials and a special \"Service Account Email Address\" which you obtain from the <a href=\"https://code.google.com/apis/console/\" target=\"_blank\">Google APIs Console</a>.  You then tell the Fusion Table Control the name of the Service Account Email address and upload the secret key as an asset to your application and set the KeyFile property to point at this file. Finally you check the \"UseServiceAuthentication\" checkbox in the designer.  When using a Service Account, end-users do not need to login to use Fusion Tables, your service account authenticates all access.</p> <p>To get an API key, follow these instructions.</p> <ol> <li>Go to your <a href=\"https://code.google.com/apis/console/\" target=\"_blank\">Google APIs Console</a> and login if necessary.</li> <li>Select the <i>Services</i> item from the menu on the left.</li> <li>Choose the <i>Fusiontables</i> service from the list provided and turn it on.</li> <li>Go back to the main menu and select the <i>API Access</i> item. </li> </ol> <p>Your API Key will be near the bottom of that pane in the section called \"Simple API Access\".  You will have to provide that key as the value for the <i>ApiKey</i> property in your Fusiontables app.</p> <p>Once you have an API key, set the value of the <i>Query</i> property to a valid Fusiontables SQL query and call <i>SendQuery</i> to execute the query.  App Inventor will send the query to the Fusion Tables server and the <i>GotResult</i> block will fire when a result is returned from the server.  Query results will be returned in CSV format, and can be converted to list format using the \"list from csv table\" or \"list from csv row\" blocks.</p> <p>Note that you do not need to worry about UTF-encoding the query.  But you do need to make sure the query follows the syntax described in <a href=\"https://developers.google.com/fusiontables/docs/v2/getting_started\" target=\"_blank\">the reference manual</a>, which means that things like capitalization for names of columns matters, and that single quotes must be used around column names if there are spaces in them.</p>")
   @Description("")
   String FusiontablesControlHelpStringComponentPallette();
 
@@ -5975,7 +6002,7 @@ public interface OdeMessages extends Messages {
   @Description("")
   String MediaStoreHelpStringComponentPallette();
 
-  @DefaultMessage("<p>Non-visible component to provide NFC capabilities.  For now this component supports the reading and writing of text tags only (if supported by the device)</p><p>In order to read and write text tags, the component must have its <code>ReadMode</code> property set to True or False respectively.</p><p><strong>Note:</strong> This component will only work on Screen1 of any Hybro Studio app.</p>")
+  @DefaultMessage("<p>Non-visible component to provide NFC capabilities.  For now this component supports the reading and writing of text tags only (if supported by the device)</p><p>In order to read and write text tags, the component must have its <code>ReadMode</code> property set to True or False respectively.</p><p><strong>Note:</strong> This component will only work on Screen1 of any App Inventor app.</p>")
   @Description("")
   String NearFieldHelpStringComponentPallette();
 
@@ -6091,7 +6118,7 @@ public interface OdeMessages extends Messages {
   @Description("")
   String TimePickerHelpStringComponentPallette();
 
-  @DefaultMessage("TinyDB is a non-visible component that stores data for an app. <p> Apps created with Hybro Studio are initialized each time they run: If an app sets the value of a variable and the user then quits the app, the value of that variable will not be remembered the next time the app is run. In contrast, TinyDB is a <em> persistent </em> data store for the app, that is, the data stored there will be available each time the app is run. An example might be a game that saves the high score and retrieves it each time the game is played. </<p> <p> Data items are strings stored under <em>tags</em> . To store a data item, you specify the tag it should be stored under.  Subsequently, you can retrieve the data that was stored under a given tag. </p><p> There is only one data store per app. Even if you have multiple TinyDB components, they will use the same data store. To get the effect of separate stores, use different keys. Also each app has its own data store. You cannot use TinyDB to pass data between two different apps on the phone, although you <em>can</em> use TinyDb to shares data between the different screens of a multi-screen app. </p> <p>When you are developing apps using the AI Companion, all the apps using that companion will share the same TinyDb.  That sharing will disappear once the apps are packaged.  But, during development, you should be careful to clear the TinyDb each time you start working on a new app.</p>")
+  @DefaultMessage("TinyDB is a non-visible component that stores data for an app. <p> Apps created with App Inventor are initialized each time they run: If an app sets the value of a variable and the user then quits the app, the value of that variable will not be remembered the next time the app is run. In contrast, TinyDB is a <em> persistent </em> data store for the app, that is, the data stored there will be available each time the app is run. An example might be a game that saves the high score and retrieves it each time the game is played. </<p> <p> Data items are strings stored under <em>tags</em> . To store a data item, you specify the tag it should be stored under.  Subsequently, you can retrieve the data that was stored under a given tag. </p><p> There is only one data store per app. Even if you have multiple TinyDB components, they will use the same data store. To get the effect of separate stores, use different keys. Also each app has its own data store. You cannot use TinyDB to pass data between two different apps on the phone, although you <em>can</em> use TinyDb to shares data between the different screens of a multi-screen app. </p> <p>When you are developing apps using the AI Companion, all the apps using that companion will share the same TinyDb.  That sharing will disappear once the apps are packaged.  But, during development, you should be careful to clear the TinyDb each time you start working on a new app.</p>")
   @Description("")
   String TinyDBHelpStringComponentPallette();
 
@@ -6111,7 +6138,7 @@ public interface OdeMessages extends Messages {
   @Description("")
   String VerticalScrollArrangementHelpStringComponentPallette();
 
-  @DefaultMessage("A multimedia component capable of playing videos. When the application is run, the VideoPlayer will be displayed as a rectangle on-screen.  If the user touches the rectangle, controls will appear to play/pause, skip ahead, and skip backward within the video.  The application can also control behavior by calling the <code>Start</code>, <code>Pause</code>, and <code>SeekTo</code> methods.  <p>Video files should be in Windows Media Video (.wmv) format, 3GPP (.3gp), or MPEG-4 (.mp4).  For more details about legal formats, see <a href=\"http://developer.android.com/guide/appendix/media-formats.html\" target=\"_blank\">Android Supported Media Formats</a>.</p><p>Hybro Studio for Android only permits video files under 1 MB and limits the total size of an application to 5 MB, not all of which is available for media (video, audio, and sound) files.  If your media files are too large, you may get errors when packaging or installing your application, in which case you should reduce the number of media files or their sizes.  Most video editing software, such as Windows Movie Maker and Apple iMovie, can help you decrease the size of videos by shortening them or re-encoding the video into a more compact format.</p><p>You can also set the media source to a URL that points to a streaming video, but the URL must point to the video file itself, not to a program that plays the video.")
+  @DefaultMessage("A multimedia component capable of playing videos. When the application is run, the VideoPlayer will be displayed as a rectangle on-screen.  If the user touches the rectangle, controls will appear to play/pause, skip ahead, and skip backward within the video.  The application can also control behavior by calling the <code>Start</code>, <code>Pause</code>, and <code>SeekTo</code> methods.  <p>Video files should be in Windows Media Video (.wmv) format, 3GPP (.3gp), or MPEG-4 (.mp4).  For more details about legal formats, see <a href=\"http://developer.android.com/guide/appendix/media-formats.html\" target=\"_blank\">Android Supported Media Formats</a>.</p><p>App Inventor for Android only permits video files under 1 MB and limits the total size of an application to 5 MB, not all of which is available for media (video, audio, and sound) files.  If your media files are too large, you may get errors when packaging or installing your application, in which case you should reduce the number of media files or their sizes.  Most video editing software, such as Windows Movie Maker and Apple iMovie, can help you decrease the size of videos by shortening them or re-encoding the video into a more compact format.</p><p>You can also set the media source to a URL that points to a streaming video, but the URL must point to the video file itself, not to a program that plays the video.")
   @Description("")
   String VideoPlayerHelpStringComponentPallette();
 
@@ -6133,7 +6160,7 @@ public interface OdeMessages extends Messages {
 
   @DefaultMessage("A non-visible component allowing you to store data on a Web database powered by Firebase. " +
       "This allows the users of your app to share data with each other. " +
-      "By default, data will be stored in Hybro Studio''s shared Firebase database. " +
+      "By default, data will be stored in App Inventor''s shared Firebase database. " +
       "Otherwise, you can specify the URL for your own Firebase in the \"FirebaseURL\" property. " +
       "Learn more at <a target=\"_blank\" href=\"http://www.firebase.com\">Firebase.com</a>.")
   @Description("")
@@ -6141,21 +6168,22 @@ public interface OdeMessages extends Messages {
 
 
   //Ode.java messages
-  @DefaultMessage("Welcome to Hybro Studio !")
+  @DefaultMessage("Welcome to App Inventor 2!")
   @Description("")
   String createNoProjectsDialogText();
 
-  @DefaultMessage("No Project were created ! " +
-      "To learn how to use Hybro Studio, click the \"Guide\" " +
-      "click the \"New Project\" button to start creating your awesome app !")
+  @DefaultMessage("You do not have any projects in App Inventor 2. " +
+      "To learn how to use App Inventor, click the \"Guide\" " +
+      "link at the top of the window; or to start your first project, " +
+      "click the \"Start New Project\" button at the upper left of the window.")
   @Description("")
   String createNoProjectsDialogMessage1();
 
-  @DefaultMessage("Happy Creatng!")
+  @DefaultMessage("Happy Inventing!")
   @Description("")
   String createNoprojectsDialogMessage2();
 
-  @DefaultMessage("Welcome to Hybro Studio!")
+  @DefaultMessage("Welcome to App Inventor!")
   @Description("")
   String createWelcomeDialogText();
 
@@ -6167,7 +6195,7 @@ public interface OdeMessages extends Messages {
   @Description("")
   String doNotShow();
 
-  @DefaultMessage("<h2>Please fill out a short voluntary survey so that we can learn more about our users and improve Hybro Studio.</h2>")
+  @DefaultMessage("<h2>Please fill out a short voluntary survey so that we can learn more about our users and improve MIT App Inventor.</h2>")
   @Description("")
   String showSurveySplashMessage();
 
@@ -6188,7 +6216,7 @@ public interface OdeMessages extends Messages {
   String invalidSessionDialogText();
 
   @DefaultMessage("<p><font color=red>Warning:</font> This session is out of date.</p>" +
-                "<p>This Hybro Studio account has been opened from another location. " +
+                "<p>This App Inventor account has been opened from another location. " +
                 "Using a single account from more than one location at the same time " +
                 "can damage your projects.</p>" +
                 "<p>Choose one of the buttons below to:" +
@@ -6217,15 +6245,15 @@ public interface OdeMessages extends Messages {
   @Description("")
   String bashWarningDialogText();
 
-  @DefaultMessage("<p><font color=red>WARNING:</font> A second Hybro " +
-                "Studio session has been opened for this account. You may choose to " +
-                "continue with both sessions, but working with Hybro Studio from more " +
+  @DefaultMessage("<p><font color=red>WARNING:</font> A second App " +
+                "Inventor session has been opened for this account. You may choose to " +
+                "continue with both sessions, but working with App Inventor from more " +
                 "than one session simultaneously can cause blocks to be lost in ways " +
-                "that cannot be recovered from the Hybro Studio server.</p><p>" +
+                "that cannot be recovered from the App Inventor server.</p><p>" +
                 "We recommend that people not open multiple sessions on the same " +
                 "account. But if you do need to work in this way, then you should " +
                 "regularly export your project to your local computer, so you will " +
-                "have a backup copy independent of the Hybro Studio server. Use " +
+                "have a backup copy independent of the App Inventor server. Use " +
                 "\"Export\" from the Projects menu to export the project.</p>")
   @Description("")
   String bashWarningDialogMessage();
@@ -6297,11 +6325,11 @@ public interface OdeMessages extends Messages {
   @Description("")
   String GetRowsWithConditionsMethods();
 
-  @DefaultMessage("中文(简体)")
+  @DefaultMessage("简体中文")
   @Description("")
   String SwitchToSimplifiedChinese();
 
-  @DefaultMessage("中文(繁體)")
+  @DefaultMessage("繁体中文")
   @Description("")
   String SwitchToTraditionalChinese();
 
@@ -6496,7 +6524,7 @@ public interface OdeMessages extends Messages {
   @Description("")
   String readOnlyMode();
 
-  @DefaultMessage("Either your session has expired, or Hybro Studio has been upgraded. " +
+  @DefaultMessage("Either your session has expired, or App Inventor has been upgraded. " +
     "You will need to \"Reload\" your session to continue. Press the \"Reload\" Button " +
     "below.")
   @Description("")
@@ -6563,35 +6591,35 @@ public interface OdeMessages extends Messages {
   @Description("")
   String CloudConnectedMethods();
 
-  @DefaultMessage("PrimaryColor(Title Bar)")
+  @DefaultMessage("PrimaryColor")
   @Description("")
   String PrimaryColorProperties();
 
-  @DefaultMessage("PrimaryColorDark(Status Bar)")
+  @DefaultMessage("PrimaryColorDark")
   @Description("")
   String PrimaryColorDarkProperties();
 
-  @DefaultMessage("AccentColor(Component)")
+  @DefaultMessage("AccentColor")
   @Description("")
   String AccentColorProperties();
 
-  @DefaultMessage("App Theme")
-  @Description("the Theme or UI your app use")
+  @DefaultMessage("Theme")
+  @Description("")
   String ThemeProperties();
 
-  @DefaultMessage("Android Classic")
-  @Description("Android 1.5 - 2.3 Classic Theme")
+  @DefaultMessage("Classic")
+  @Description("")
   String classicTheme();
 
-  @DefaultMessage("DEFAULT THEME (Recommended)")
-  @Description("Follow The theme of your device (Material UI in new android devices)")
+  @DefaultMessage("Device Default")
+  @Description("")
   String defaultTheme();
 
-  @DefaultMessage("Black Title Theme")
+  @DefaultMessage("Black Title Text")
   @Description("")
   String blackTitleTheme();
 
-  @DefaultMessage("Dark Theme (Material UI)")
+  @DefaultMessage("Dark")
   @Description("")
   String darkTheme();
 
@@ -7043,12 +7071,28 @@ public interface OdeMessages extends Messages {
   @Description("")
   String RotationProperties();
 
+  @DefaultMessage("WebRTC")     // Note: This is INTERNAL so doesn't need translation
+  @Description("")
+  String WebRTCProperties();
+
+  @DefaultMessage("GetVersionName")
+  @Description("")
+  String GetVersionNameMethods();
+
+  @DefaultMessage("SdkLevel")
+  @Description("")
+  String SdkLevelMethods();
+
+  @DefaultMessage("GetInstaller")
+  @Description("")
+  String GetInstallerMethods();
+
   @DefaultMessage("Notice!")
   @Description("Title for the Warning Dialog Box")
   String NoticeTitle();
 
-  @DefaultMessage("Use this option to build apps that that will work back to Android 2.1 (Eclair)," +
-      "<br/>but will not be publishable to Google Play Store.")
+  @DefaultMessage("Use this option to build apps that that will work back to Android version 2.1 (Eclair)," +
+      "<br/>but will not be publishable in the Google Play Store.")
   @Description("Text for the Package non-SDK 26 Warning Dialog Box (HTML)")
   String PackageNotice();
 
